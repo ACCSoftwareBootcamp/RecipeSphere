@@ -12,6 +12,12 @@ app.use(express.static('public')); // Serve static files from the 'public' folde
 app.use(express.urlencoded({ extended: true })); // Parse form data in POST requests
 
 
+//EP: Adding our API ID and API key
+const appId = '71deea61'
+const appKey ='9572a22f509a714cdc8879798fb0ff78'
+const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_key=${appKey}`;
+
+
 // Array to store fetched recipes
 let recipesArray = [];
 
@@ -37,27 +43,25 @@ app.get('/contact', (req, res) => {
 });
 
 // External API call for recipes with query parameters
-//The /recipes route can be considered a basic example of a search route
-
-//api key use config file:
-//api endpoint with param
-
-app.get('/recipes', (req, res) => {
-    const queryParam = req.query.q; // Replace 'q' with your actual query parameter name
-
-    // Construct the URL with query parameters
-    const apiUrl = `https://api.example.com/recipes?q=${queryParam}`;
-
+app.get('/search', (req, res) => {
+    //EP: The searchTerm will either default to 'desserts' if there's no
+    //entry in the name=recipesearch input from the search.ejs page.
+    const searchTerm = req.query.recipesearch || 'desserts';
+    //Set the baseUrl and append the searchTerm query
+    const apiUrl = `${baseUrl}&q=${searchTerm}`;
+    //Axios call to Edam food api
     axios.get(apiUrl)
         .then(response => {
-            recipesArray = response.data; // Store fetched recipes in the array
-            res.render('recipes', { recipes: recipesArray });
-        })
+             // Store fetched recipes in the array
+            const data = response.data;
+            res.render('search.ejs', {data: data.hits, searchTerm},
+            );//end res.render
+        })//end .then-response
         .catch(error => {
             console.error('Error fetching recipes:', error);
             res.status(500).send('Error fetching recipes, API not working');
-        });
-});
+        });//end .catch-error
+
 
 // Start listen the server
 app.listen(port, () => {
