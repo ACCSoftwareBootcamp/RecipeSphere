@@ -4,6 +4,7 @@ body{
 
 
 
+
 /* location of footer and set all properties */
 .foot{
     padding: 0;
@@ -105,3 +106,4 @@ socialIcoms a:hover i{
         margin: 10px;
     }
 }
+
