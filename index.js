@@ -61,6 +61,7 @@ app.get('/search', (req, res) => {
             console.error('Error fetching recipes:', error);
             res.status(500).send('Error fetching recipes, API not working');
         });//end .catch-error
+});
 
 
 // Start listen the server
