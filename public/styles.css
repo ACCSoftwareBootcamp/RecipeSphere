@@ -249,3 +249,19 @@ socialIcoms a:hover i{
     color: hsl(64, 85%, 68%); /* Light golden color */
     background-color: #FFA500; /* Light orange color */
 }
+
+
+
+
+/* SEARCH PAGE STYLING */
+
+.search-container {
+    background-image: url("/assets/searchBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
