@@ -187,3 +187,65 @@ socialIcoms a:hover i{
     }
 }
 
+/* for color: https://www.color-hex.com/color/8b0000 */
+/* Header for background of Home page */
+/* use container div class as relative to get css four properties and use flex and fix the width & height*/
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 600px;
+    padding: 40px;
+}
+
+/* the image will be scaled to cover the entire container while maintaining its aspect ratio */
+.imgBack {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* translateY(-50%); CSS rule is used to vertically center an element within its parent container */
+.imgText1,
+.imgText2 {
+    position: absolute;
+    top: 40%;
+    right: 200px;
+    transform: translateY(-50%);
+    color:  #800000;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* positioned 45% of the parent's height from the top plus an additional 30 pixels down */
+.imgText2 {
+    top: calc(45% + 30px);
+}
+
+/*manage find button class: absolute- position it freely within its nearest positioned ancestor., 
+ and positions the element 45% down from the top edge of its containing block  */
+.findButton {
+    position: absolute;
+    top: calc(45% + 100px);
+    right: 190px;
+    padding: 8px 8px;
+    color: white;
+    background-color: #990000;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #8b0000 Red4; /* Light golden color */
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+/*.findButton:hover {
+    color: darkorange;
+}*/
+
+/* findButton class for user hover */
+.findButton:hover {
+    color: hsl(64, 85%, 68%); /* Light golden color */
+    background-color: #FFA500; /* Light orange color */
+}
