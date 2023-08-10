@@ -23,13 +23,13 @@ let recipesArray = [];
 
 // Routes
 app.get('/', (req, res) => {
-    //res.render('home');
-    res.send("Welcome to the landing Page here!");
+    res.render('home');
+    // res.send("Welcome to the landing Page here!");
 });
 
 app.get('/home', (req, res) => {
     //res.render('home');
-    res.send('Welcome to the Home Page!');
+    res.render('home');
 });
 
 app.get('/about', (req, res) => {
