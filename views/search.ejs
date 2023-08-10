@@ -3,10 +3,41 @@
 
 
 
+<!-- HEADING FOR SEARCH RESULTS -->
+<div class="flex  items-center justify-center bg-slate-100">
+  <h1 class="text-2xl font-bold">Below are your searches for: "<%= searchTerm %>"</h1>
+</div>
 
 
+<!-- EJS OUTPUT AND TAILWIND STYLE FOR RECIPE CARDS -->
+<div class="flex flex-wrap min-h-screen items-center justify-center bg-slate-100">
+  <!-- ITERATE THROUGH THE DATA ARRAY SETUP THE CARDS WITH THE IMAGE ON THE FRONT
+  AND THE LABEL AND INSTRUCTIONS ON THE BACK  -->
+  <% data.forEach((p) => { %>
+    <div class="group h-96 w-1/4 [perspective:1000px] mx-2 my-4">
+      <div class="flex-row relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+        <div class="absolute inset-0">
+          <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="<%= p.recipe.image %>" alt="" />
+        </div>
+        
+        <div class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-2 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] overscroll-auto overflow-y-auto ...">
+          <div class="flex min-h-full flex-col items-center justify-center">
+            <h1 class="text-2xl font-bold"><%= p.recipe.label %></h1>
+            <ul>
+              <!-- ITERATE THROUGH THE INGREDIENTS AND CREATE A NEW LINE ITEM -->
+              <% p.recipe.ingredientLines.forEach((i) => { %>
+                <li><%= i %></li>
+              <% }) %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% }) %>
+  
+</div>
 
 
-  <!-- FOOTER PARTIAL -->
+<!-- FOOTER PARTIAL -->
   <br>
   <%- include ('./partials/footer.ejs') %>
