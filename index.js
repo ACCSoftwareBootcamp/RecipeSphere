@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true })); // Parse form data in POST requ
 
 //EP: Adding our API ID and API key
 const appId = '71deea61'
-const appKey ='9572a22f509a714cdc8879798fb0ff78'
+const appKey = '9572a22f509a714cdc8879798fb0ff78'
 const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_key=${appKey}`;
 
 
@@ -26,6 +26,14 @@ app.get('/', (req, res) => {
     res.render('home');
     // res.send("Welcome to the landing Page here!");
 });
+
+// For user wrong entry: Middleware for handling 404 errors - Inside the middleware function, status code to 404, 
+//indicating that the resource was not found
+
+app.use((req, res, next) => {
+    res.status(404).send("<h1>404!!! Not found, please use a valid URL.</h1>");
+});
+
 
 app.get('/home', (req, res) => {
     //res.render('home');
@@ -52,9 +60,9 @@ app.get('/search', (req, res) => {
     //Axios call to Edam food api
     axios.get(apiUrl)
         .then(response => {
-             // Store fetched recipes in the array
+            // Store fetched recipes in the array
             const data = response.data;
-            res.render('search.ejs', {data: data.hits, searchTerm},
+            res.render('search.ejs', { data: data.hits, searchTerm },
             );//end res.render
         })//end .then-response
         .catch(error => {
