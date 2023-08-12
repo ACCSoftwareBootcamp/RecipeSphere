@@ -34,7 +34,7 @@ app.get('/home', (req, res) => {
 
 app.get('/about', (req, res) => {
     //res.render('about');
-    res.send('Welcome to the about Page!');
+    res.render('about.ejs');
 });
 
 app.get('/contact', (req, res) => {
