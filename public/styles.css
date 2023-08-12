@@ -187,3 +187,202 @@ socialIcoms a:hover i{
     }
 }
 
+
+
+
+
+/* Contact page CSS Style from here: */
+
+/* Container holding the content */
+.container {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    max-width: 1000px;
+    top: 40px;
+  }
+  
+  /* set image */
+  .container img {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    object-fit: cover;
+  }
+  
+  /* Right section: Contact Us */
+  .contact-right {
+    position: absolute;
+    top: 180px;
+    right: 210px;
+    font-size: 28px;
+    color: #990000;
+    font-weight: bold;
+    font-family: 'Courier New', Courier;
+  }
+  
+  /* Bottom-right text */
+  .text-right {
+    position: absolute;
+    top: 220px;
+    right: 200px;
+    color: #22AD1F;
+    font-size: 24px;
+  }
+  
+  
+  
+  /* Media query for smaller screens - adjustment*/
+  @media (max-width: 768px) {
+    /* Adjust the styles for smaller screens */
+    .contact-right {
+      font-size: 22px;
+      top: 56px;
+      right: 58px; /* Adjust this value as needed */
+    }
+  
+    .text-right {
+      font-size: 16px;
+      top: 80px;
+      right: 45px; /* Adjust this value as needed */
+    }
+  }
+  
+  
+  /* Contact form for user input*/
+  .contact-form {
+    width: 280px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* contact from h2 element*/
+  .contact-form h2 {
+    margin-top: 60px;
+  }
+  
+  /* contact form label display*/
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 1px;
+  }
+  
+  /* contact form input and text area css properties*/
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #990000;
+    outline: none;
+  }
+  
+  /* text area resize*/
+
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  /* user submit button CSS properties */
+  .contact-form button {
+    background-color: #990000;
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /*question text */
+  
+  .quesText {
+    font-size: 32px;
+  }
+  
+  /* Question icons */
+  .ques {
+    position: absolute;
+    bottom: 80px;
+    left: 80px;
+    color: #3EC70B;
+  }
+  
+  /*.... question icon source: https://www.toptal.com/designers/htmlarrows/symbols/ */
+  .question-icon1 {
+    position: absolute;
+    display: inline-block;
+    font-size: 80px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #D4D925; 
+    left: 80px;
+    bottom: 115px;
+    transform: rotate(-30deg);
+    /*margin-right: 5px; *//* Adjust spacing between icon and text */
+    
+  }
+  
+  .question-icon2 {
+    position: absolute;
+    display: inline-block;
+    font-size: 80px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #FF5B00; 
+    left: 160px;
+    bottom: 135px;
+    transform: rotate(0deg);
+    /*margin-right: 5px; *//* Adjust spacing between icon and text */
+    
+  }
+  
+  .question-icon3 {
+    position: absolute;
+    display: inline-block;
+    font-size: 80px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #990000; 
+    left: 210px;
+    bottom: 60px;
+    transform: rotate(20deg);
+    /*margin-right: 5px; *//* Adjust spacing between icon and text */
+    
+  }
+  
+  /* Responsive styles for screen size question text & icon*/
+  
+  @media screen and (max-width: 768px) {
+    .quesText {
+      font-size: 24px;
+    }
+  
+    .ques {
+      left: 38px;
+      bottom: 20px;
+    }
+  
+    .question-icon1 {
+      font-size: 50px;
+      left: 35px;
+      bottom: 50px;
+    }
+  
+    .question-icon2 {
+      font-size: 50px;
+      left: 88px;
+      bottom: 58px;
+    }
+  
+    .question-icon3 {
+      font-size: 50px;
+      left: 142px;
+      bottom: 16px;
+    }
+  }
+  
+  /* used to add a question mark icon using CSS-generated content */
+  /*span {
+    content: "\003F";
+  }*/
