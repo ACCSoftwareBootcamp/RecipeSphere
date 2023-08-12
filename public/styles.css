@@ -78,11 +78,6 @@ body {
 
 
 
-
-
-
-
-
 /* FOOTER CSS Begins */
 
 /* location of footer and set all properties */
@@ -93,12 +88,12 @@ body {
 }
 
 footer {
-    background-color:  #111;
+    background-color:  #990000;
 }
 
 .footerContainer {
     width: 100%;
-    padding: 70px 30px 20px;
+    padding: 20px 30px 20px;
 }
 
 .socialIcoms {
@@ -116,26 +111,27 @@ footer {
 
 .socialIcoms a i {
     font-size: 2em;
-    color: black;
+    color: #FF5B00;
     opacity: 0.9;
    
 }
 
 /* Hover Effects on soical media icons*/
 .socialIcoms a:hover {
-    background-color: #111;
+    background-color: #D4D925;
     transition: 0.5s;
 
 }
 
 socialIcoms a:hover i{
-    color: white;
+    color: #FF5B00;
     transition: 0.5s;
 
 }
 
 .footerNav {
     margin: 30px 0;
+    color: #FF5B00;
 }
 
 .footerNav ul{
@@ -145,7 +141,7 @@ socialIcoms a:hover i{
 }
 
 .footerNav ul li a {
-    color: white;
+    color: #D4D925;
     margin: 20px;
     text-decoration: none;
     font-size: 1.3em;
@@ -155,16 +151,17 @@ socialIcoms a:hover i{
 
 .footerNav ul li a:hover {
     opacity: 1;
+    color: white;
 }
 
 .footerBottom {
-    background-color: #000;
-    padding: 20px;
+    background-color: white;
+    padding: 10px;
     text-align: center;
 }
 
 .footerBottom p {
-    color: white;
+    color: #990000;
 }
 
 .designer {
@@ -186,6 +183,8 @@ socialIcoms a:hover i{
         margin: 10px;
     }
 }
+
+/* FOOTER CSS ENDS HERE */
 
 /* for color: https://www.color-hex.com/color/8b0000 */
 /* Header for background of Home page */
@@ -213,7 +212,7 @@ socialIcoms a:hover i{
     top: 40%;
     right: 200px;
     transform: translateY(-50%);
-    color:  #800000;
+    color:  #990000;
     font-size: 25px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
@@ -235,7 +234,7 @@ socialIcoms a:hover i{
     background-color: #990000;
     border: none;
     cursor: pointer;
-    border: 1px solid #8b0000 Red4; /* Light golden color */
+    border: 1px solid #990000 Red4; /* Light golden color */
     font-weight: bolder;
     font-size: 15px;
 }
@@ -254,7 +253,6 @@ socialIcoms a:hover i{
 
 
 /* SEARCH PAGE STYLING */
-
 .search-container {
     background-image: url("/assets/searchBackground.jpg");
     background-size: cover;
