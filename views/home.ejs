@@ -1,22 +1,17 @@
 <!-- HEADER PARTIAL -->
-<%- include ('./partials/header.ejs') %> 
+<%- include ('./partials/header.ejs') %>
+  <div id="home">
 
-
-  <div class="container">
-
-      <img src="/assets/homeBackground.jpeg" class="imgBack">
+    <div class="container">
 
       <p class="imgText1">Welcome Friends!</p>
       <p class="imgText2">Happy, you are here</p>
-      <button class="findButton" onclick="findRecipes()">Find Recipes</button>
-
+      <form action="/search" method="/get">
+        <button class="findButton">Find Recipes</button>
+      </form>
+    </div>
   </div>
 
-
-
-
-
-
   <!-- FOOTER PARTIAL -->
-  <br>
+  <br />
   <%- include ('./partials/footer.ejs') %>

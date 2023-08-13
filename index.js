@@ -47,13 +47,11 @@ app.get('/home', (req, res) => {
 //About page to render 
 app.get('/about', (req, res) => {
     res.render('about');
-   // res.send('Welcome to the about Page!');
 });
 
 //Contact Page to render
 app.get('/contact', (req, res) => {
-    //res.render('contact');
-    res.send('Welcome to the contact Page!');
+    res.render('contact');
 });
 
 // External API call for recipes with query parameters for user searching recipe.
