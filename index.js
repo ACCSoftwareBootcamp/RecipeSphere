@@ -56,7 +56,7 @@ app.get('/contact', (req, res) => {
     res.send('Welcome to the contact Page!');
 });
 
-// External API call for recipes with query parameters
+// External API call for recipes with query parameters for user searching recipe.
 app.get('/search', (req, res) => {
     //EP: The searchTerm will either default to 'desserts' if there's no
     //entry in the name=recipesearch input from the search.ejs page.
