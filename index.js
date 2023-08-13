@@ -78,7 +78,7 @@ app.get('/search', (req, res) => {
 });
 
 
-// Start listen the server
+// Start listen the server on the local PORT
 app.listen(port, () => {
     console.log(`Server is running on PORT ${port}`);
 });
