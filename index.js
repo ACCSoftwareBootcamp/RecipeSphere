@@ -1,4 +1,4 @@
-//this is a test
+
 //Import required external node module
 //Import the Express framework for handling HTTP request
 const express = require('express');
@@ -55,7 +55,7 @@ app.get('/contact', (req, res) => {
 
 });
 
-// External API call for recipes with query parameters
+// External API call for recipes with query parameters for user searching recipe.
 app.get('/search', (req, res) => {
     //EP: The searchTerm will either default to 'desserts' if there's no
     //entry in the name=recipesearch input from the search.ejs page.
@@ -77,7 +77,7 @@ app.get('/search', (req, res) => {
 });
 
 
-// Start listen the server
+// Start listen the server on the local PORT
 app.listen(port, () => {
     console.log(`Server is running on PORT ${port}`);
 });
