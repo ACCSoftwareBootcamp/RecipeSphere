@@ -1,18 +1,27 @@
 //this is a test
-
+//Import required external node module
+//Import the Express framework for handling HTTP request
 const express = require('express');
+
+//Import Axios for making HTTP requests
 const axios = require('axios');
+
+//Create an instance fo the express module
 const app = express();
+
+//Specify the PORT number on the local host to run server 
 const port = 3003; // Use your preferred port
 
 
-// Set EJS as the view engine
+// Set EJS as the view engine and middleware.
 app.set('view engine', 'ejs');
 app.use(express.static('public')); // Serve static files from the 'public' folder
+
 app.use(express.urlencoded({ extended: true })); // Parse form data in POST requests
 
+// Define API credential and base URL
 
-//EP: Adding our API ID and API key
+//EP: Adding our API ID and API key 
 const appId = '71deea61'
 const appKey ='9572a22f509a714cdc8879798fb0ff78'
 const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_key=${appKey}`;
@@ -21,25 +30,28 @@ const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appI
 // Array to store fetched recipes
 let recipesArray = [];
 
-// Routes
+// Define Routes for 
+//landing page and render the home.ejs html file
+
 app.get('/', (req, res) => {
     res.render('home');
     // res.send("Welcome to the landing Page here!");
 });
 
+//Home page - send a simple response
 app.get('/home', (req, res) => {
     //res.render('home');
     res.render('home');
 });
 
+//About page to render 
 app.get('/about', (req, res) => {
-    //res.render('about');
-    res.render('about.ejs');
+    res.render('about');
 });
 
+//Contact Page to render
 app.get('/contact', (req, res) => {
-    //res.render('contact');
-    res.send('Welcome to the contact Page!');
+    res.render('contact');
 });
 
 // External API call for recipes with query parameters
