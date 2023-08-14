@@ -199,10 +199,17 @@ socialIcoms a:hover i{
 }
 
 /* the image will be scaled to cover the entire container while maintaining its aspect ratio */
-.imgBack {
+#home {
+    background-image: url('/assets/landingBackground.jpg');
+    background-size: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+ 
+    box-sizing: border-box;
 }
 
 /* translateY(-50%); CSS rule is used to vertically center an element within its parent container */
