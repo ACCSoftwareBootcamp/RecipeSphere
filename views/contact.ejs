@@ -2,8 +2,52 @@
 <%- include ('./partials/header.ejs') %> 
 
 
+<!-- contact page html code -->
 
+<div class="container">
+  <!-- Background image -->
+  <img src="/assets/contactBackground.jpg" alt="Background Image" style="width:100%;">
 
+  <!-- Contact header -->
+  <div class="contact-right">Contact Us</div>
+
+  <!-- Bottom-right text -->
+  <div class="text-right">
+    <p>“Please fill out the <br> following form if you <br> have any issues.”</p>
+  </div>
+
+  <!-- Question icons -->
+  <span class="question-icon1">&#63;</span>
+  <span class="question-icon2">&#63;</span>
+  <span class="question-icon3">&#63;</span>
+
+  <!-- Questions title -->
+  <div class="ques">
+    <h1 class="quesText">Questions</h1>
+  </div>
+</div>
+
+<!-- Contact form -->
+<div class="contact-form">
+  <h2>Contact Us</h2>
+  <form action="/submit-contact" method="post">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="concerns">Your Concerns:</label>
+    <textarea id="concerns" name="concerns" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- contact page html code end here  -->
 
 
 

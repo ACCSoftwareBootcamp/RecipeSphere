@@ -30,28 +30,29 @@ const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appI
 // Array to store fetched recipes
 let recipesArray = [];
 
-// Define Routes for 
-//landing page and render the home.ejs html file
+
+// Create Routes using express Get method which has parameter for path and callback function.
 
 app.get('/', (req, res) => {
     res.render('home');
-    // res.send("Welcome to the landing Page here!");
+   
 });
 
 //Home page - send a simple response
 app.get('/home', (req, res) => {
-    //res.render('home');
     res.render('home');
 });
 
 //About page to render 
 app.get('/about', (req, res) => {
     res.render('about');
+
 });
 
 //Contact Page to render
 app.get('/contact', (req, res) => {
     res.render('contact');
+
 });
 
 // External API call for recipes with query parameters
