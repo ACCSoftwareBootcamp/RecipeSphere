@@ -1,48 +1,66 @@
-//this is a test
 
+//Import required external node module
+//Import the Express framework for handling HTTP request
 const express = require('express');
+
+//Import Axios for making HTTP requests
 const axios = require('axios');
+
+//Create an instance fo the express module
 const app = express();
+
+//Specify the PORT number on the local host to run server 
 const port = 3003; // Use your preferred port
 
 
-// Set EJS as the view engine
+// Set EJS as the view engine and middleware.
 app.set('view engine', 'ejs');
 app.use(express.static('public')); // Serve static files from the 'public' folder
+
 app.use(express.urlencoded({ extended: true })); // Parse form data in POST requests
 
+// Define API credential and base URL
 
-//EP: Adding our API ID and API key
+//EP: Adding our API ID and API key 
 const appId = '71deea61'
-const appKey ='9572a22f509a714cdc8879798fb0ff78'
+const appKey = '9572a22f509a714cdc8879798fb0ff78'
 const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_key=${appKey}`;
 
 
 // Array to store fetched recipes
 let recipesArray = [];
 
-// Routes
+
+// Create Routes using express Get method which has parameter for path and callback function.
 app.get('/', (req, res) => {
     res.render('home');
-    // res.send("Welcome to the landing Page here!");
+   
 });
 
+
+// For user wrong entry: Middleware for handling 404 errors - Inside the middleware function, status code to 404, 
+//indicating that the resource was not found
+app.use((req, res, next) => {
+    res.status(404).send("<h1>404!!! Not found, please use a valid URL.</h1>");
+});
+
+//Home page - send a simple response
 app.get('/home', (req, res) => {
-    //res.render('home');
     res.render('home');
 });
 
+//About page to render 
 app.get('/about', (req, res) => {
-    //res.render('about');
-    res.render('about.ejs');
+    res.render('about');
 });
 
+//Contact Page to render
 app.get('/contact', (req, res) => {
-    //res.render('contact');
-    res.send('Welcome to the contact Page!');
+    res.render('contact');
+
 });
 
-// External API call for recipes with query parameters
+// External API call for recipes with query parameters for user searching recipe.
 app.get('/search', (req, res) => {
     //EP: The searchTerm will either default to 'desserts' if there's no
     //entry in the name=recipesearch input from the search.ejs page.
@@ -52,9 +70,9 @@ app.get('/search', (req, res) => {
     //Axios call to Edam food api
     axios.get(apiUrl)
         .then(response => {
-             // Store fetched recipes in the array
+            // Store fetched recipes in the array
             const data = response.data;
-            res.render('search.ejs', {data: data.hits, searchTerm},
+            res.render('search.ejs', { data: data.hits, searchTerm },
             );//end res.render
         })//end .then-response
         .catch(error => {
@@ -64,7 +82,7 @@ app.get('/search', (req, res) => {
 });
 
 
-// Start listen the server
+// Start listen the server on the local PORT
 app.listen(port, () => {
     console.log(`Server is running on PORT ${port}`);
 });
