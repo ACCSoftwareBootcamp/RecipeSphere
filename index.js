@@ -33,7 +33,7 @@ let recipesArray = [];
 
 // Create Routes using express Get method which has parameter for path and callback function.
 app.get('/', (req, res) => {
-    res.render('login');
+    res.render('home');
    
 });
 
