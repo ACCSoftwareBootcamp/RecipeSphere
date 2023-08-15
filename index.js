@@ -37,13 +37,6 @@ app.get('/', (req, res) => {
    
 });
 
-
-// For user wrong entry: Middleware for handling 404 errors - Inside the middleware function, status code to 404, 
-//indicating that the resource was not found
-app.use((req, res, next) => {
-    res.status(404).send("<h1>404!!! Not found, please use a valid URL.</h1>");
-});
-
 //Home page - send a simple response
 app.get('/home', (req, res) => {
     res.render('home');
@@ -81,6 +74,12 @@ app.get('/search', (req, res) => {
         });//end .catch-error
 });
 
+
+// For user wrong entry: Middleware for handling 404 errors - Inside the middleware function, status code to 404, 
+//indicating that the resource was not found
+app.use((req, res, next) => {
+    res.status(404).send("<h1>404!!! Not found, please use a valid URL.</h1>");
+});
 
 // Start listen the server on the local PORT
 app.listen(port, () => {
