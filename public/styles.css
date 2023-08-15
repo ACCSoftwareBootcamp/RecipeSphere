@@ -603,3 +603,129 @@ socialIcoms a:hover i{
 }
 
 
+
+/* Login page CSS from here */
+
+/* add login div adj with css properties */
+.loginContainer {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    height: 700px;
+    text-align: center;
+    top: 40px;
+}
+
+/* adj img CSS properties */
+img {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    object-fit: cover;
+}
+
+/* added login page background image Url */
+  #loginbgd {
+    background-image: url("./assets/logInBackground.jpg");
+    /* background: no-repeat;*/
+    /* object-fit: cover; */
+    background-size: cover; 
+  
+  }
+
+/* adj text inside image */
+.text1 {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    color: #990000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* adj text inside image */
+.text2 {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    color: #990000;;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* adj form & label and button */
+form {
+    position: absolute;
+    margin-top: 300px;
+    width: 100%;
+    left: 50%;
+    max-width: 500px;
+    text-align: center;
+    
+  }
+  
+  form label {
+    position: absolute;
+    display: block;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    /*color: rgb(196, 45, 45);*/ /* Change label color to white */
+    color:#F0FF42;
+    margin-bottom: 1px;
+    text-align: left;
+  }
+  
+  form input {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 8px;
+    background-color: #fbfbe7;
+    
+  }
+
+ 
+  
+  .btn1 {
+    position: absolute;
+    background-color: #F0FF42;
+    color: black;
+    top: 160px;
+    left: 25%;
+    padding: 10px 45px;
+    font-size: medium;
+    font-weight: bold;
+    
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add transition properties */
+  }
+
+  .btn1:hover {
+    background-color: #82CD47; /* Change background color on hover */
+    color: green; /* Change text color on hover */
+  }
+
+  .btn2{
+    position: absolute;
+    background-color: #990000;
+    color: black;
+    top: 260px;
+    left: 25%;
+    padding: 3px 40px;
+    font-size: medium;
+    font-weight: bold;
+    
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add transition properties */
+  }
+
+  .btn2:hover {
+    background-color: lightgreen;/* Change background color on hover */
+    color: green; /* Change text color on hover */
+  }
