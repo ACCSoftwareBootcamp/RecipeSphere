@@ -37,6 +37,16 @@ app.get('/', (req, res) => {
    
 });
 
+
+
+
+
+
+//Login page 
+app.get('/login', (req, res) => {
+    res.render('login');
+});
+
 //Home page - send a simple response
 app.get('/home', (req, res) => {
     res.render('home');
