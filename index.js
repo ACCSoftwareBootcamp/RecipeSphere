@@ -42,7 +42,7 @@ app.get('/landing', (req, res) => {
   
 //Root to landing page too
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('landing');
 });
 
 //Sign Up page to render
