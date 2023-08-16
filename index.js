@@ -41,17 +41,16 @@ app.get('/landing', (req, res) => {
   
 //Root to landing page too
 app.get('/', (req, res) => {
-    res.render('landing');   
+    res.render('home');
 });
 
-  
-//Login page - 
-app.get('/login', (req, res) => {
-    res.render('login');
+//Sign Up page to render
+app.get('/signup', (req, res) => {
+    res.render('signup');
 });
 
 
-//Login page 
+//Login page render
 app.get('/login', (req, res) => {
     res.render('login');
 });
