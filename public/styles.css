@@ -155,33 +155,12 @@ body {
 
 /*manage find button class: absolute- position it freely within its nearest positioned ancestor., 
  and positions the element 45% down from the top edge of its containing block  */
-.findButton2 {
-  position: absolute;
-  top: calc(45% + 100px);
+.#fb1 {
   right: 190px;
-  padding: 8px 8px;
-  color: white;
-  background-color: #990000;
-  border: none;
-  cursor: pointer;
-  border: 1px solid #8b0000 Red4;
-  /* Light golden color */
-  font-weight: bolder;
-  font-size: 15px;
 }
-.findButton1 {
-  position: absolute;
-  top: calc(45% + 100px);
+
+#fb2 {
   right: 100px;
-  padding: 8px 8px;
-  color: white;
-  background-color: #990000;
-  border: none;
-  cursor: pointer;
-  border: 1px solid #8b0000 Red4;
-  /* Light golden color */
-  font-weight: bolder;
-  font-size: 15px;
 }
 
 /*.findButton:hover {
@@ -717,7 +696,7 @@ img {
 }
 
 /* adj form & label and button */
-=======
+
 .form1 {
   position: absolute;
   margin-top: 300px;
