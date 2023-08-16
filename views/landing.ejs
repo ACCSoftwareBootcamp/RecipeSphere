@@ -1,10 +1,23 @@
 <!-- HEADER PARTIAL -->
-<%- include ('./partials/header.ejs') %> 
+<%- include ('./partials/header.ejs') %>
 
+<!-- landing page/ ROOT ROUTE -->
+  <div id="home">
 
+    <div class="container">
 
-
-
+      <p class="imgText1">Welcome Friends!</p>
+      <p class="imgText2">Happy, you are Sphere</p>
+      <!-- LOGIN BUTTON -->
+      <form action="/login" method="/get">
+        <button class="findButton">Log In</button>
+      </form>
+      <!-- SIGN UP BUTTON -->
+      <form action="/signup" method="/get">
+        <button class="findButton">Sign Up</button>
+      </form>
+    </div>
+  </div>
 
 
   <!-- FOOTER PARTIAL -->

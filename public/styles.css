@@ -241,6 +241,7 @@ socialIcoms a:hover i {
 .footerNav {
   margin: 30px 0;
   color: #FF5B00;
+
 }
 
 .footerNav ul {
@@ -279,6 +280,7 @@ socialIcoms a:hover i {
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0px 5px;
+
 }
 
 /* make responsive for other device like mobile. use media query: Media queries allow you to apply CSS styles depending on a device's*/
@@ -671,13 +673,15 @@ img {
   object-fit: cover;
 }
 
+
+
+
 /* added login page background image Url */
 #loginbgd {
   background-image: url("./assets/logInBackground.jpg");
   /* background: no-repeat;*/
   /* object-fit: cover; */
   background-size: cover;
-
 }
 
 /* adj text inside image */
@@ -695,43 +699,44 @@ img {
   top: 10%;
   left: 55%;
   color: #990000;
-  ;
   font-family: 'Courier New', Courier, monospace;
 }
 
 /* adj form & label and button */
-form {
+=======
+.form1 {
   position: absolute;
   margin-top: 300px;
   width: 100%;
   left: 50%;
   max-width: 500px;
   text-align: center;
-
+  
 }
 
-form label {
+.formlabel {
   position: absolute;
   display: block;
   font-size: 22px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  /*color: rgb(196, 45, 45);*/
-  /* Change label color to white */
-  color: #F0FF42;
+  /*color: rgb(196, 45, 45);*/ /* Change label color to white */
+  color:#F0FF42;
   margin-bottom: 1px;
   text-align: left;
 }
 
-form input {
+.forminput {
   width: 50%;
   margin-bottom: 30px;
   border: 1px solid #ccc;
   border-radius: 2px;
   padding: 8px;
   background-color: #fbfbe7;
-
+  
 }
+
+
 
 .btn1 {
   position: absolute;
@@ -742,23 +747,20 @@ form input {
   padding: 10px 45px;
   font-size: medium;
   font-weight: bold;
-
-
+  
+  
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  /* Add transition properties */
+  transition: background-color 0.3s, color 0.3s; /* Add transition properties */
 }
 
 .btn1:hover {
-  background-color: #82CD47;
-  /* Change background color on hover */
-  color: green;
-  /* Change text color on hover */
+  background-color: #82CD47; /* Change background color on hover */
+  color: green; /* Change text color on hover */
 }
 
-.btn2 {
+.btn2{
   position: absolute;
   background-color: #990000;
   color: black;
@@ -767,8 +769,6 @@ form input {
   padding: 3px 40px;
   font-size: medium;
   font-weight: bold;
-
-
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -809,4 +809,5 @@ h1, h2 {
   width: 80%; 
   margin: 20px auto;
 }
+
 
