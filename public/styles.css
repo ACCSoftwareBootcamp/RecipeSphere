@@ -167,7 +167,7 @@ footer {
 
 .footerContainer {
     width: 100%;
-    padding: 20px 30px 20px;
+    padding: 15px 30px 15px;
 }
 
 .socialIcoms {
@@ -204,7 +204,7 @@ socialIcoms a:hover i{
 }
 
 .footerNav {
-    margin: 30px 0;
+    margin: 20px 0;
     color: #FF5B00;
 }
 
@@ -219,31 +219,19 @@ socialIcoms a:hover i{
     margin: 20px;
     text-decoration: none;
     font-size: 1.3em;
-    opacity: 0.7;
     transition: 0.5s;
 }
 
 .footerNav ul li a:hover {
-    opacity: 1;
     color: white;
 }
 
-.footerBottom {
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.footerBottom p {
-    color: #990000;
-}
-
 .designer {
-    opacity: 0.7;
+  color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
-    margin: 0px 5px;
+    text-align: center;
 }
 
 /* make responsive for other device like mobile. use media query: Media queries allow you to apply CSS styles depending on a device's*/
@@ -604,128 +592,135 @@ socialIcoms a:hover i{
 
 
 
+
+
+
 /* Login page CSS from here */
 
 /* add login div adj with css properties */
 .loginContainer {
-    position: relative;
-    display: flex;
-    justify-content: left;
-    height: 700px;
-    text-align: center;
-    top: 40px;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  height: 700px;
+  text-align: center;
+  top: 40px;
 }
 
 /* adj img CSS properties */
 img {
-    width: 100%;
-    height: 100%;
-    left: 0%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  object-fit: cover;
 }
 
+
+
+
 /* added login page background image Url */
-  #loginbgd {
-    background-image: url("./assets/logInBackground.jpg");
-    /* background: no-repeat;*/
-    /* object-fit: cover; */
-    background-size: cover; 
-  
-  }
+#loginbgd {
+  background-image: url("./assets/logInBackground.jpg");
+  /* background: no-repeat;*/
+  /* object-fit: cover; */
+  background-size: cover; 
+
+}
 
 /* adj text inside image */
 .text1 {
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    color: #990000;
-    font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  color: #990000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
 }
 
 /* adj text inside image */
 .text2 {
-    position: absolute;
-    top: 10%;
-    left: 55%;
-    color: #990000;;
-    font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  top: 10%;
+  left: 55%;
+  color: #990000;;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* adj form & label and button */
-form {
-    position: absolute;
-    margin-top: 300px;
-    width: 100%;
-    left: 50%;
-    max-width: 500px;
-    text-align: center;
-    
-  }
+.form1 {
+  position: absolute;
+  margin-top: 300px;
+  width: 100%;
+  left: 50%;
+  max-width: 500px;
+  text-align: center;
   
-  form label {
-    position: absolute;
-    display: block;
-    font-size: 22px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    /*color: rgb(196, 45, 45);*/ /* Change label color to white */
-    color:#F0FF42;
-    margin-bottom: 1px;
-    text-align: left;
-  }
+}
+
+.formlabel {
+  position: absolute;
+  display: block;
+  font-size: 22px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  /*color: rgb(196, 45, 45);*/ /* Change label color to white */
+  color:#F0FF42;
+  margin-bottom: 1px;
+  text-align: left;
+}
+
+.forminput {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 8px;
+  background-color: #fbfbe7;
   
-  form input {
-    width: 50%;
-    margin-bottom: 30px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    padding: 8px;
-    background-color: #fbfbe7;
-    
-  }
+}
 
- 
+
+
+.btn1 {
+  position: absolute;
+  background-color: #F0FF42;
+  color: black;
+  top: 160px;
+  left: 25%;
+  padding: 10px 45px;
+  font-size: medium;
+  font-weight: bold;
   
-  .btn1 {
-    position: absolute;
-    background-color: #F0FF42;
-    color: black;
-    top: 160px;
-    left: 25%;
-    padding: 10px 45px;
-    font-size: medium;
-    font-weight: bold;
-    
-    
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Add transition properties */
-  }
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add transition properties */
+}
 
-  .btn1:hover {
-    background-color: #82CD47; /* Change background color on hover */
-    color: green; /* Change text color on hover */
-  }
+.btn1:hover {
+  background-color: #82CD47; /* Change background color on hover */
+  color: green; /* Change text color on hover */
+}
 
-  .btn2{
-    position: absolute;
-    background-color: #990000;
-    color: black;
-    top: 260px;
-    left: 25%;
-    padding: 3px 40px;
-    font-size: medium;
-    font-weight: bold;
-    
-    
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Add transition properties */
-  }
+.btn2{
+  position: absolute;
+  background-color: #990000;
+  color: black;
+  top: 260px;
+  left: 25%;
+  padding: 3px 40px;
+  font-size: medium;
+  font-weight: bold;
+  
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add transition properties */
+}
 
-  .btn2:hover {
-    background-color: lightgreen;/* Change background color on hover */
-    color: green; /* Change text color on hover */
-  }
+.btn2:hover {
+  background-color: lightgreen;/* Change background color on hover */
+  color: green; /* Change text color on hover */
+}
