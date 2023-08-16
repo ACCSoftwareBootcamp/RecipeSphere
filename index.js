@@ -37,6 +37,7 @@ let recipesArray = [];
 //Landing page
 app.get('/landing', (req, res) => {
     res.render('landing');
+});
 
   
 //Root to landing page too
