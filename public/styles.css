@@ -689,8 +689,8 @@ img {
 /* adj text inside image */
 .text2 {
   position: absolute;
-  top: 10%;
-  left: 55%;
+  top: 40%;
+  left: 50%;
   color: #990000;
   font-family: 'Courier New', Courier, monospace;
 }
