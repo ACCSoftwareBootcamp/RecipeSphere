@@ -580,9 +580,9 @@ socialIcoms a:hover i {
   width: 100%;
   height: 100%;
   color: #990000;
-  font-size: 70px;
-  margin: 0px 0px 100px;
-  padding-left: 625px;
+  font-size: 30px;
+/*   margin: 0px 0px 100px;
+  padding-left: 625px; */
 
 }
 
@@ -590,7 +590,7 @@ socialIcoms a:hover i {
   width: 100%;
   height: 100px;
   color: #22AD1F;
-  font-size: 36px;
+  font-size: 30px;
   padding-left: 625px;
   padding-right: 300px;
   margin-bottom: 100px;
@@ -620,8 +620,8 @@ socialIcoms a:hover i {
 #bgd {
   background-image: url('/assets/aboutBackground.jpg');
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   align-items: center;
   display: flex;
   justify-content: center;
