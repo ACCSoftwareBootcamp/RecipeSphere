@@ -1,0 +1,32 @@
+<!-- HEADER PARTIAL -->
+<%- include ('./partials/header.ejs') %>
+    <div id="signupBgd">
+        <div class="signupContainer">
+
+            <h1>Recipe Sphere Sign Up</h1>
+            <h2>Welcome</h2>
+
+            <div class="signup-form">
+                <h2>Please fill out the following Form!</h2>
+                <form action="/submit-signup" method="post">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <!-- Submit Button -->
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER PARTIAL -->
+        <br />
+        <%- include ('./partials/footer.ejs') %>
