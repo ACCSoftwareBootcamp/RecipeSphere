@@ -731,7 +731,7 @@ img {
 
 
 .btn1 {
-  position: absolute;
+/*   position: absolute; */
   background-color: #F0FF42;
   color: black;
   top: 160px;
@@ -753,7 +753,7 @@ img {
 }
 
 .btn2{
-  position: absolute;
+/*   position: absolute; */
   background-color: #990000;
   color: black;
   top: 260px;
