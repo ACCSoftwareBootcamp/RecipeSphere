@@ -9,6 +9,21 @@ const axios = require('axios');
 //Create an instance fo the express module
 const app = express();
 
+
+//INSTALL NODEMAILER FOR OUR CONTACT PAGE
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+
+//CONFIGURE THE ZOHO MAILER ACCOUNT FOR OUR CONTACT PAGE
+const mailTransporter = nodemailer.createTransport({
+    service: 'Zoho',
+    auth: {
+        user: 'recipesphere@zohomail.com',
+        pass: 'june2023cohort'
+    }
+});
+
+
 //Specify the PORT number on the local host to run server 
 const port = 3003; // Use your preferred port
 
@@ -16,8 +31,9 @@ const port = 3003; // Use your preferred port
 // Set EJS as the view engine and middleware.
 app.set('view engine', 'ejs');
 app.use(express.static('public')); // Serve static files from the 'public' folder
-
 app.use(express.urlencoded({ extended: true })); // Parse form data in POST requests
+// Parse incoming request data
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Define API credential and base URL
 
@@ -52,7 +68,7 @@ app.get('/signup', (req, res) => {
 
 
 //Login page render
-app.get('/login', (req, res) => {
+app.get('/login', (req, res) => {j
     res.render('login');
 });
 
@@ -79,6 +95,41 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 
 });
+
+//EP: SUBMIT CONTACT FORM TO ZOHO MAIL SERVER
+app.post('/contact', (req, res) => {
+    const { firstName, lastName, email, concerns } = req.body;
+
+  const mailOptions = {
+    from: 'recipesphere@zohomail.com',
+    to: 'recipesphere@zohomail.com', // Change this to the recipient's email
+    subject: 'Contact Form Submission',
+    text: `
+      First Name: ${firstName}
+      Last Name: ${lastName}
+      Email: ${email}
+      Concerns: ${concerns}
+    `
+  };
+
+
+ // Send email using mailTransporter
+ mailTransporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log(error);
+      res.status(500).send('Error sending email');
+    } else {
+      console.log('Email sent: ' + info.response);
+      // Redirect back to the contact page with a success query parameter
+      res.redirect('/contact?success=true');
+     // Send a JSON response indicating success
+    //  res.json({ success: true });
+
+    }
+  });
+});//END APP.POST
+
+
 
 // External API call for recipes with query parameters for user searching recipe.
 app.get('/search', (req, res) => {
