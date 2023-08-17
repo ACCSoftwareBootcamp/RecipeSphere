@@ -113,15 +113,14 @@ body {
 /* for color: https://www.color-hex.com/color/8b0000 */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
 .container {
-  position: relative;
   display: flex;
-  /*justify-content: center;*/
-  justify-content: left;
+  /* when display flex  then you can use justify content in the center */
+  justify-content: end; 
+  align-items: center;
   width: 800px;
   height: 800px;
   padding-top: 2px;
-  margin-bottom: 80px;
-
+  max-width: 1000px;
 
 }
 
@@ -136,11 +135,11 @@ body {
 }
 
 /* translateY(-50%); CSS rule is used to vertically center an element within its parent container */
-.imgText1,
-.imgText2 {
-  position: absolute;
-  top: 40%;
-  right: 200px;
+
+.imgText {
+  /* position: absolute; */
+  /* top: 40%;
+  right: 200px; */
   transform: translateY(-50%);
   color: #800000;
   font-size: 25px;
@@ -149,25 +148,18 @@ body {
 }
 
 /* positioned 45% of the parent's height from the top plus an additional 30 pixels down */
-.imgText2 {
+/* .imgText2 {
   top: calc(45% + 30px);
-}
+} */
 
 /*manage find button class: absolute- position it freely within its nearest positioned ancestor., 
  and positions the element 45% down from the top edge of its containing block  */
-.findButton {
-  position: absolute;
-  top: calc(45% + 100px);
+#fb1 {
   right: 190px;
-  padding: 8px 8px;
-  color: white;
-  background-color: #990000;
-  border: none;
-  cursor: pointer;
-  border: 1px solid #8b0000 Red4;
-  /* Light golden color */
-  font-weight: bolder;
-  font-size: 15px;
+}
+
+#fb2 {
+  right: 100px;
 }
 
 /*.findButton:hover {
@@ -232,7 +224,7 @@ footer {
 
 }
 
-socialIcoms a:hover i {
+.socialIcoms a:hover i {
   color: #FF5B00;
   transition: 0.5s;
 
@@ -272,6 +264,7 @@ socialIcoms a:hover i {
 
 .footerBottom p {
   color: #990000;
+  font-size: x-small;
 }
 
 .designer {
@@ -298,16 +291,6 @@ socialIcoms a:hover i {
 
 
 /* Contact page CSS Style from here: */
-
-/* Container holding the content */
-.container {
-  display: flex;
-  justify-content: left;
-  position: relative;
-  max-width: 1000px;
-  top: 40px;
-}
-
 /* set image */
 .container img {
   width: 100%;
@@ -358,7 +341,6 @@ socialIcoms a:hover i {
 }
 
 /* FOOTER CSS ENDS HERE */
-
 /* Contact form for user input*/
 .contact-form {
   width: 280px;
@@ -434,7 +416,6 @@ socialIcoms a:hover i {
   transform: rotate(-30deg);
   /*margin-right: 5px; */
   /* Adjust spacing between icon and text */
-
 }
 
 .question-icon2 {
@@ -504,14 +485,6 @@ socialIcoms a:hover i {
 /* for color: https://www.color-hex.com/color/8b0000 */
 /* Header for background of Home page */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
-.container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 1000px;
-  height: 600px;
-  padding: 40px;
-}
 
 /* the image will be scaled to cover the entire container while maintaining its aspect ratio */
 #home {
@@ -519,9 +492,6 @@ socialIcoms a:hover i {
   background-size: cover;
   width: 100%;
   height: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
   background-position: center;
 
   box-sizing: border-box;
@@ -576,27 +546,18 @@ socialIcoms a:hover i {
 
 
 /* About Styling Begins Here */
-/* .aboutContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-} */
-
 .aboutContainer h1 {
   width: 100%;
   height: 100%;
   color: #990000;
-  font-size: 70px;
-  margin: 0px 0px 100px;
-  padding-left: 625px;
-
+  font-size: 30px;
 }
 
 .aboutContainer h3 {
   width: 100%;
   height: 100px;
   color: #22AD1F;
-  font-size: 36px;
+  font-size: 30px;
   padding-left: 625px;
   padding-right: 300px;
   margin-bottom: 100px;
@@ -626,8 +587,8 @@ socialIcoms a:hover i {
 #bgd {
   background-image: url('/assets/aboutBackground.jpg');
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -660,9 +621,9 @@ socialIcoms a:hover i {
   position: relative;
   display: flex;
   justify-content: left;
-  height: 700px;
+  height: 100vh;
   text-align: center;
-  top: 40px;
+/*   top: 40px; */
 }
 
 /* adj img CSS properties */
@@ -687,7 +648,7 @@ img {
 /* adj text inside image */
 .text1 {
   position: absolute;
-  top: 2%;
+  top: 30%;
   left: 50%;
   color: #990000;
   font-family: 'Courier New', Courier, monospace;
@@ -696,14 +657,14 @@ img {
 /* adj text inside image */
 .text2 {
   position: absolute;
-  top: 10%;
-  left: 55%;
+  top: 40%;
+  left: 50%;
   color: #990000;
   font-family: 'Courier New', Courier, monospace;
 }
 
 /* adj form & label and button */
-=======
+
 .form1 {
   position: absolute;
   margin-top: 300px;
@@ -715,9 +676,8 @@ img {
 }
 
 .formlabel {
-  position: absolute;
   display: block;
-  font-size: 22px;
+  font-size: 12px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   /*color: rgb(196, 45, 45);*/ /* Change label color to white */
@@ -739,7 +699,7 @@ img {
 
 
 .btn1 {
-  position: absolute;
+/*   position: absolute; */
   background-color: #F0FF42;
   color: black;
   top: 160px;
@@ -747,8 +707,6 @@ img {
   padding: 10px 45px;
   font-size: medium;
   font-weight: bold;
-  
-  
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -761,7 +719,7 @@ img {
 }
 
 .btn2{
-  position: absolute;
+/*   position: absolute; */
   background-color: #990000;
   color: black;
   top: 260px;

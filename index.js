@@ -37,11 +37,12 @@ let recipesArray = [];
 //Landing page
 app.get('/landing', (req, res) => {
     res.render('landing');
+});
 
   
 //Root to landing page too
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('landing');
 });
 
 //Sign Up page to render
@@ -54,6 +55,13 @@ app.get('/signup', (req, res) => {
 app.get('/login', (req, res) => {
     res.render('login');
 });
+
+
+//Login page render
+app.post('/login', (req, res) => {
+    res.render('login');
+});
+
 
 
 //Home page - send a simple response
