@@ -109,18 +109,30 @@ body {
 
 
 
-/* CSS - Header for background of Home page -Afsana */
+/* CSS - For background of Landing page -Afsana */
+/* This styling will be used for the Landing.ejs pages */
 /* for color: https://www.color-hex.com/color/8b0000 */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
+
+/* the image will be scaled to cover the entire container while maintaining its aspect ratio */
+#home {
+  background-image: url('/assets/landingBackground.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+
 .container {
   display: flex;
   /* when display flex  then you can use justify content in the center */
   justify-content: end; 
-  align-items: center;
   width: 800px;
   height: 800px;
   padding-top: 2px;
-  max-width: 1000px;
+  padding-top: 10em;
 
 }
 
@@ -130,8 +142,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-
 }
 
 /* translateY(-50%); CSS rule is used to vertically center an element within its parent container */
@@ -145,6 +155,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
 }
 
 /* positioned 45% of the parent's height from the top plus an additional 30 pixels down */
@@ -174,7 +185,36 @@ body {
   /* Light orange color */
 }
 
-/* Header CSS ENDS */
+/*manage find button class: absolute- position it freely within its nearest positioned ancestor., 
+ and positions the element 45% down from the top edge of its containing block  */
+.findButton {
+  position: absolute;
+  top: calc(45% + 100px);
+  right: 190px;
+  padding: 8px 8px;
+  color: white;
+  background-color: #990000;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #990000 Red4;
+  /* Light golden color */
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+/*.findButton:hover {
+    color: darkorange;
+}*/
+
+/* findButton class for user hover */
+.findButton:hover {
+  color: hsl(64, 85%, 68%);
+  /* Light golden color */
+  background-color: #FFA500;
+  /* Light orange color */
+}
+
+/* Landing and Home CSS ENDS */
 
 
 
@@ -221,19 +261,16 @@ footer {
 .socialIcoms a:hover {
   background-color: #D4D925;
   transition: 0.5s;
-
 }
 
 .socialIcoms a:hover i {
   color: #FF5B00;
   transition: 0.5s;
-
 }
 
 .footerNav {
   margin: 20px 0;
   color: #FF5B00;
-
 }
 
 .footerNav ul {
@@ -465,6 +502,7 @@ footer {
     bottom: 16px;
   }
 }
+/* END Contact Styleing */
 
 
 
@@ -622,9 +660,6 @@ img {
   object-fit: cover;
 }
 
-
-
-
 /* added login page background image Url */
 #loginbgd {
   background-image: url("./assets/logInBackground.jpg");
@@ -660,7 +695,6 @@ img {
   left: 50%;
   max-width: 500px;
   text-align: center;
-  
 }
 
 .formlabel {
@@ -680,14 +714,12 @@ img {
   border: 1px solid #ccc;
   border-radius: 2px;
   padding: 8px;
-  background-color: #fbfbe7;
-  
+  background-color: #fbfbe7; 
 }
 
 
 
 .btn1 {
-/*   position: absolute; */
   background-color: #F0FF42;
   color: black;
   top: 160px;
@@ -707,7 +739,6 @@ img {
 }
 
 .btn2{
-/*   position: absolute; */
   background-color: #990000;
   color: black;
   top: 260px;
@@ -736,6 +767,15 @@ img {
   background-position: center;
 }
 
+.signuplogo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding: 80px;
+  margin-right: 700px;
+}
+
 .signupContainer {
   display: flex;
   flex-direction: column;
@@ -743,19 +783,81 @@ img {
   justify-content: center;
   height: 100vh; 
   padding: 20px;
+  margin-left: 700px;
 }
 
-h1, h2 {
+.signupHeader {
+  color: #FF5B00;
+  font-size: 55px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.signupHeader2 {
   color: #990000;
+  font-size: 48px;
   text-align: center;
   margin: 10px 0;
 }
 
 .signup-form {
-  width: 80%; 
+  width: 100%; 
   margin: 20px auto;
+  padding: 20px;
 }
 
+.signup-form h2 {
+  color: #82CD47;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.signupFormDetails {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .signupFormDetails {
+      width: 90%; 
+  }
+}
+
+/* contact form input and text area css properties*/
+
+
+.-form input,
+.signup-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #990000;
+  outline: none;
+}
+
+/* text area resize*/
+
+.signup-form textarea {
+  resize: vertical;
+}
+
+/* user submit button CSS properties */
+.signup-form button {
+  background-color: #990000;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 
 /* HOME PAGE CSS START */
 
@@ -800,4 +902,5 @@ h1, h2 {
 .homeFindButton:hover {
   color: #990000;
   background-color: #D4D925;
+
 }

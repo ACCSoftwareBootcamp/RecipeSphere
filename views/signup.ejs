@@ -1,26 +1,27 @@
 <!-- HEADER PARTIAL -->
 <%- include ('./partials/header.ejs') %>
     <div id="signupBgd">
+        <div class="signuplogo">
+            <h1 class="signupHeader" >Recipe Sphere Sign Up</h1>
+        </div>
         <div class="signupContainer">
-
-            <h1>Recipe Sphere Sign Up</h1>
-            <h2>Welcome</h2>
-
             <div class="signup-form">
+                <h1 class="signupHeader2" >Welcome</h1>
                 <h2>Please fill out the following Form!</h2>
-                <form action="/submit-signup" method="post">
+                <form class="signupFormDetails" action="/submit-signup" method="post">
                     <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter first name Here" required>
 
                     <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter last name Here" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Enter email Here" required>
 
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" placeholder="Enter password Here" required>
 
+                    <br><br>
                     <!-- Submit Button -->
                     <button type="submit">Submit</button>
                 </form>
