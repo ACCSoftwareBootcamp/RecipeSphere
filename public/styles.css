@@ -474,6 +474,7 @@ footer {
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
 
 /* the image will be scaled to cover the entire container while maintaining its aspect ratio */
+/* LANDING PAGE BGD */
 #home {
   background-image: url('/assets/landingBackground.jpg');
   background-size: cover;
@@ -756,3 +757,47 @@ h1, h2 {
 }
 
 
+/* HOME PAGE CSS START */
+
+/* HOME PAGE BGD */
+#homeBgd {
+  background-image: url('/assets/homeBackground.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.homeContainer {
+  display: absolute;
+  text-align: center;
+}
+
+.homeImgText1 {
+  top: 50%;
+  left: 50%;
+  transform: translateY(100%);
+  color: #FFEE63;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.homeFindButton {
+  position: absolute;
+  top: calc(50% + 4vw);
+  left: 50%;
+  transform: translateX(-50%);  
+  padding: 1.5vh 3vw;
+  border-radius: 5px;
+  color: white;
+  background-color: #FF5B00;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 2.5vw;
+}
+
+.homeFindButton:hover {
+  color: #990000;
+  background-color: #D4D925;
+}
