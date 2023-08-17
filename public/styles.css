@@ -110,6 +110,7 @@ body {
 
 
 /* CSS - For background of Landing page -Afsana */
+/* This styling will be used for both Landing.ejs and Home.ejs pages */
 /* for color: https://www.color-hex.com/color/8b0000 */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
 .container {
@@ -172,7 +173,7 @@ body {
   /* Light orange color */
 }
 
-/* Landing CSS ENDS */
+/* Landing and Home CSS ENDS */
 
 
 
@@ -460,71 +461,8 @@ footer {
     bottom: 16px;
   }
 }
+/* END Contact Styleing */
 
-
-
-
-/* for color: https://www.color-hex.com/color/8b0000 */
-/* Header for background of Home page */
-/* use container div class as relative to get css four properties and use flex and fix the width & height*/
-
-/* the image will be scaled to cover the entire container while maintaining its aspect ratio */
-#home {
-  background-image: url('/assets/landingBackground.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-
-  box-sizing: border-box;
-}
-
-/* translateY(-50%); CSS rule is used to vertically center an element within its parent container */
-.imgText1,
-.imgText2 {
-  position: absolute;
-  top: 40%;
-  right: 200px;
-  transform: translateY(-50%);
-  color: #990000;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-/* positioned 45% of the parent's height from the top plus an additional 30 pixels down */
-.imgText2 {
-  top: calc(45% + 30px);
-}
-
-/*manage find button class: absolute- position it freely within its nearest positioned ancestor., 
- and positions the element 45% down from the top edge of its containing block  */
-.findButton {
-  position: absolute;
-  top: calc(45% + 100px);
-  right: 190px;
-  padding: 8px 8px;
-  color: white;
-  background-color: #990000;
-  border: none;
-  cursor: pointer;
-  border: 1px solid #990000 Red4;
-  /* Light golden color */
-  font-weight: bolder;
-  font-size: 15px;
-}
-
-/*.findButton:hover {
-    color: darkorange;
-}*/
-
-/* findButton class for user hover */
-.findButton:hover {
-  color: hsl(64, 85%, 68%);
-  /* Light golden color */
-  background-color: #FFA500;
-  /* Light orange color */
-}
 
 
 /* About Styling Begins Here */
@@ -616,9 +554,6 @@ img {
   object-fit: cover;
 }
 
-
-
-
 /* added login page background image Url */
 #loginbgd {
   background-image: url("./assets/logInBackground.jpg");
@@ -654,7 +589,6 @@ img {
   left: 50%;
   max-width: 500px;
   text-align: center;
-  
 }
 
 .formlabel {
@@ -674,14 +608,12 @@ img {
   border: 1px solid #ccc;
   border-radius: 2px;
   padding: 8px;
-  background-color: #fbfbe7;
-  
+  background-color: #fbfbe7; 
 }
 
 
 
 .btn1 {
-/*   position: absolute; */
   background-color: #F0FF42;
   color: black;
   top: 160px;
@@ -701,7 +633,6 @@ img {
 }
 
 .btn2{
-/*   position: absolute; */
   background-color: #990000;
   color: black;
   top: 260px;
