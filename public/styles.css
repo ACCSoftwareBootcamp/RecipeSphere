@@ -113,15 +113,14 @@ body {
 /* for color: https://www.color-hex.com/color/8b0000 */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
 .container {
-  position: relative;
   display: flex;
-  /*justify-content: center;*/
-  justify-content: left;
+  /* when display flex  then you can use justify content in the center */
+  justify-content: end; 
+  align-items: center;
   width: 800px;
   height: 800px;
   padding-top: 2px;
-  margin-bottom: 80px;
-
+  max-width: 1000px;
 
 }
 
@@ -136,11 +135,11 @@ body {
 }
 
 /* translateY(-50%); CSS rule is used to vertically center an element within its parent container */
-.imgText1,
-.imgText2 {
-  position: absolute;
-  top: 40%;
-  right: 200px;
+
+.imgText {
+  /* position: absolute; */
+  /* top: 40%;
+  right: 200px; */
   transform: translateY(-50%);
   color: #800000;
   font-size: 25px;
@@ -149,13 +148,13 @@ body {
 }
 
 /* positioned 45% of the parent's height from the top plus an additional 30 pixels down */
-.imgText2 {
+/* .imgText2 {
   top: calc(45% + 30px);
-}
+} */
 
 /*manage find button class: absolute- position it freely within its nearest positioned ancestor., 
  and positions the element 45% down from the top edge of its containing block  */
-.#fb1 {
+#fb1 {
   right: 190px;
 }
 
@@ -225,7 +224,7 @@ footer {
 
 }
 
-socialIcoms a:hover i {
+.socialIcoms a:hover i {
   color: #FF5B00;
   transition: 0.5s;
 
@@ -292,16 +291,6 @@ socialIcoms a:hover i {
 
 
 /* Contact page CSS Style from here: */
-
-/* Container holding the content */
-.container {
-  display: flex;
-  justify-content: left;
-  position: relative;
-  max-width: 1000px;
-  top: 40px;
-}
-
 /* set image */
 .container img {
   width: 100%;
@@ -352,7 +341,6 @@ socialIcoms a:hover i {
 }
 
 /* FOOTER CSS ENDS HERE */
-
 /* Contact form for user input*/
 .contact-form {
   width: 280px;
@@ -428,7 +416,6 @@ socialIcoms a:hover i {
   transform: rotate(-30deg);
   /*margin-right: 5px; */
   /* Adjust spacing between icon and text */
-
 }
 
 .question-icon2 {
@@ -498,14 +485,6 @@ socialIcoms a:hover i {
 /* for color: https://www.color-hex.com/color/8b0000 */
 /* Header for background of Home page */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
-.container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 1000px;
-  height: 600px;
-  padding: 40px;
-}
 
 /* the image will be scaled to cover the entire container while maintaining its aspect ratio */
 #home {
@@ -513,9 +492,6 @@ socialIcoms a:hover i {
   background-size: cover;
   width: 100%;
   height: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
   background-position: center;
 
   box-sizing: border-box;
@@ -570,20 +546,11 @@ socialIcoms a:hover i {
 
 
 /* About Styling Begins Here */
-/* .aboutContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-} */
-
 .aboutContainer h1 {
   width: 100%;
   height: 100%;
   color: #990000;
   font-size: 30px;
-/*   margin: 0px 0px 100px;
-  padding-left: 625px; */
-
 }
 
 .aboutContainer h3 {
@@ -740,8 +707,6 @@ img {
   padding: 10px 45px;
   font-size: medium;
   font-weight: bold;
-  
-  
   border: none;
   border-radius: 5px;
   cursor: pointer;
