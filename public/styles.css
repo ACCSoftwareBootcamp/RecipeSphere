@@ -109,18 +109,16 @@ body {
 
 
 
-/* CSS - Header for background of Home page -Afsana */
+/* CSS - For background of Landing page -Afsana */
 /* for color: https://www.color-hex.com/color/8b0000 */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
 .container {
   display: flex;
   /* when display flex  then you can use justify content in the center */
   justify-content: end; 
-/*   align-items: center; */
   width: 800px;
   height: 800px;
   padding-top: 2px;
-/*   max-width: 1000px; */
   padding-top: 10em;
 
 }
@@ -131,8 +129,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-
 }
 
 /* translateY(-50%); CSS rule is used to vertically center an element within its parent container */
@@ -176,7 +172,7 @@ body {
   /* Light orange color */
 }
 
-/* Header CSS ENDS */
+/* Landing CSS ENDS */
 
 
 
@@ -223,19 +219,16 @@ footer {
 .socialIcoms a:hover {
   background-color: #D4D925;
   transition: 0.5s;
-
 }
 
 .socialIcoms a:hover i {
   color: #FF5B00;
   transition: 0.5s;
-
 }
 
 .footerNav {
   margin: 20px 0;
   color: #FF5B00;
-
 }
 
 .footerNav ul {
