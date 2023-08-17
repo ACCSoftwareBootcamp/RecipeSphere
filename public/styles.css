@@ -113,6 +113,18 @@ body {
 /* This styling will be used for both Landing.ejs and Home.ejs pages */
 /* for color: https://www.color-hex.com/color/8b0000 */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
+
+/* the image will be scaled to cover the entire container while maintaining its aspect ratio */
+#home {
+  background-image: url('/assets/landingBackground.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+
 .container {
   display: flex;
   /* when display flex  then you can use justify content in the center */
