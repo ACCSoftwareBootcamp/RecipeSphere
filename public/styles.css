@@ -116,11 +116,12 @@ body {
   display: flex;
   /* when display flex  then you can use justify content in the center */
   justify-content: end; 
-  align-items: center;
+/*   align-items: center; */
   width: 800px;
   height: 800px;
   padding-top: 2px;
-  max-width: 1000px;
+/*   max-width: 1000px; */
+  padding-top: 10em;
 
 }
 
@@ -145,6 +146,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
 }
 
 /* positioned 45% of the parent's height from the top plus an additional 30 pixels down */
