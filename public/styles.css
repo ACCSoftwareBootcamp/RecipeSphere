@@ -904,3 +904,116 @@ img {
   background-color: #D4D925;
 
 }
+
+
+
+
+
+/* LOGIN PAGE BOX STYLING */
+/* give container css properties for background*/
+.lcontainer {
+  width: 100%;
+  height: 100vh;
+  background-image:  url("./assets/logInBackground.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* adj form box position, width, height and background color with text alignment and 
+  adj padding:top- 50px,left+right- 60px, button- 70px. transform: translate(-50%, -50%); for center */
+.lform-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #FF5B00;
+  padding: 50PX 60PX 70PX;
+  text-align:center
+}
+/* for h1 sign up header style to adj position, font, margin, color, position*/
+.lform-box h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #3c00a0;
+  position: relative;
+}
+/* ::after. In CSS, ::after creates a pseudo-element that is the last child of the selected element, content empty, width, height */
+.lform-box h1::after{
+  content: '';
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #3c00a0;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);   /* adj underline */
+}
+/*adj input field with background, and adj for- in the same horizontal line  */
+.linput-field {
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+/*add maxHeight to hide html element using js function */
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+/* adj input for full width using css properties, and padding space inside imput box*/
+.inp {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+/* adj imput elements icons- color using imput class with i tag*/
+.linput-field i{
+  margin-left: 15px;
+  color: #990000;
+}
+/* adj forgot message with link css properties */
+.lform p{
+  text-align: left;
+  font-size: 13px;
+}
+/* adj link a tag css*/
+.lform p a{
+  text-decoration: none;
+  color: #D4D925;
+}
+/* adj button field using CSS properties*/
+.lbtn-field{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* adj button for sign up & login*/
+.lbtn-field button{
+  flex-basis: 48%;
+  background: #3c00d0;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  
+
+  
+}
+/* adj input field between button spacing*/
+.linput-group{
+  height: 280px;
+}
+/*adj second button to look disable */
+.lbtn-field button.disable{
+  background: #eaeaea;
+  color: #555;
+}
+

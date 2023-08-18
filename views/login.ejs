@@ -1,34 +1,68 @@
 <!-- HEADER PARTIAL -->
 <%- include ('./partials/header.ejs') %> 
 
-    <div id="loginbgd">
-        <div class="loginContainer">
+<script src="https://kit.fontawesome.com/a73383f015.js" crossorigin="anonymous"></script>
 
-            <!-- <img src="assets/logInBackground.jpg" alt="login"> -->
-            <h1 class="text1">Recipe Sphere</h1><br><br>
-            <h1 class="text2">Login</h1>
-            
-            <div class="form1">
-            <form action="/login" method="post">
-                <div class="formlabel">
-                    <label for="username">Username</label>
-                <div class="forminput">
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    <div id="loginbgd">
+         <!--container div holds image, form-box div holds form for sign up and login-->
+    <div class="lcontainer">
+        <div class="lform-box">
+            <!-- <h1 id="title">Sign Up</h1> -->
+            <h1 id="title">Login</h1>
+            <form class="lform">
+                <div class="linput-group">
+                    <!-- <div class="linput-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div> -->
+                    
+                    <div class="linput-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="inp" type="email" placeholder="Email">
+                    </div>
+                    <div class="linput-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input class="inp" type="password" placeholder="password">
+                    </div>
+                    <!--add p tag for message & add link to reset user password-->
+                    <p>Forgot password <a href="#">Click Here!</a></p>
                 </div>
-                <div class="formlabel">
-                <label for="password">Password</label>
+                <!--add button for sign up and login for user click & add id for click function-->
+                <div class="lbtn-field">
+                    <!-- <button type="button" id="signupBtn">Sign up</button> -->
+                    <button type="button" id="loginBtn" >Login</button>
                 </div>
-                <div class="forminput">
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            </div>
-                <button class="btn1" type="submit">Login</button>
-                <button class="btn2" type="submit">Sign Up</button>
-            </div>
             </form>
-            </div>
         </div>
     </div>
+    </div>
 
+
+
+    <script>
+        // add four variable to get html elements
+        // let signupBtn = document.getElementById("signupBtn");
+        let loginBtn = document.getElementById("loginBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+        //add click function for on the button here - loginbtn click hide name field 
+        loginBtn.onclick = function() {
+            nameField.style.maxHeight = "0"             //hidden when maxheight 0.
+        //add different title as inner html
+        title.innerHTML = "Login";
+        signupBtn.classList.add("disable");
+        loginBtn.classList.remove("disable");
+        }
+    //add click feature on the signup button 
+          //add click function for on the button here -  
+        //   signupBtn.onclick = function() {
+        //     nameField.style.maxHeight = "60px"             
+        // //add different title as inner html
+        // title.innerHTML = "Sign Up";
+        // signupBtn.classList.remove("disable");
+        // loginBtn.classList.add("disable");
+        // }
+    </script>
 
   <!-- FOOTER PARTIAL -->
   <br>
