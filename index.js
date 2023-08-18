@@ -68,7 +68,7 @@ app.get('/signup', (req, res) => {
 
 
 //Login page render
-app.get('/login', (req, res) => {j
+app.get('/login', (req, res) => {
     res.render('login');
 });
 
