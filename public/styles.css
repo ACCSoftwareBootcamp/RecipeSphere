@@ -907,7 +907,7 @@ img {
   adj padding:top- 50px,left+right- 60px, button- 70px. transform: translate(-50%, -50%); for center */
 .lform-box {
   width: 90%;
-  max-width: 450px;
+  max-width: 350px;
   position: absolute;
   top: 50%;
   left: 50%;
