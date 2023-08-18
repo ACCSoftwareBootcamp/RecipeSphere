@@ -1,4 +1,3 @@
-
 //Import required external node module
 //Import the Express framework for handling HTTP request
 const express = require('express');
@@ -8,6 +7,14 @@ const axios = require('axios');
 
 //Create an instance fo the express module
 const app = express();
+
+//run .env file but dont store it using the const dontev
+require('dotenv').config()
+
+//add mongodb
+require('./mongodb')
+// port
+const {SERVER_PORT} = process.env
 
 
 //INSTALL NODEMAILER FOR OUR CONTACT PAGE
