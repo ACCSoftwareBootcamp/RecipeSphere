@@ -248,13 +248,14 @@ footer {
   background-color: white;
   margin: 10px;
   border-radius: 50%;
+  transition: background-color 0.5s;
 }
 
 .socialIcoms a i {
   font-size: 2em;
-  color: #FF5B00;
+  color: #4267B2;
   opacity: 0.9;
-
+  transition: color 0.5s;
 }
 
 /* Hover Effects on soical media icons*/
@@ -263,10 +264,16 @@ footer {
   transition: 0.5s;
 }
 
-.socialIcoms a:hover i {
-  color: #FF5B00;
-  transition: 0.5s;
+/* Hover Effects on social media icons */
+.socialIcoms a:hover {
+  background-color: transparent; /* Background color disappears on hover */
 }
+
+.socialIcoms a:hover i {
+  color: white; 
+}
+  
+
 
 .footerNav {
   margin: 20px 0;
@@ -280,20 +287,21 @@ footer {
 }
 
 .footerNav ul li a {
-  color: #D4D925;
+  color: white;
   margin: 20px;
   text-decoration: none;
   font-size: 1.3em;
+  font-weight: bolder;
   transition: 0.5s;
 }
 
 .footerNav ul li a:hover {
-  color: white;
+  color: blue;
 }
 
 
 .designer {
-  color: white;
+  color: rgb(230, 218, 218);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
