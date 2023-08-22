@@ -863,14 +863,14 @@ img {
   font-size: 36px;
   font-weight:bolder;
   font-style:calc();
-  color: #990000;
+  color: #F0FF42;
   border-radius: 10px;
   font-smooth: always; /* Apply font smoothing */
 }
 .textContainer p {
   margin: 0;
-  font-size: 24px;
-  color: #4E9F3D;
+  font-size: 28px;
+  color: #54B435;
   font-weight: bolder;
   font-style:calc();
   font-smooth: always; /* Apply font smoothing */
@@ -880,8 +880,9 @@ img {
   position: absolute;
   top: 75%;
   left: 10%;
-  font-size: large;
-  color: #990000;
+  font-size: 65px;
+  color: #54B435;
+  font-family:cursive;
 }
 /*.... question icon source: https://fontawesome.com/search?q=question&o=r */
 /* adj css properties for question icons */
@@ -891,9 +892,9 @@ img {
   font-size: 100px; /* Adjust font size as needed */
   font-weight: bold;
   color: #D4D925;
-  left: 138px;
-  bottom: 163px;
-  transform: rotate(-30deg);
+  left: 120px;
+  bottom: 185px;
+  transform: rotate(-20deg);
   /*margin-right: 5px; // Adjust spacing between icon and text */
 }
 .question-icon2 {
@@ -902,8 +903,8 @@ img {
   font-size: 100px; /* Adjust font size as needed */
   font-weight: bold;
   color: #FF5B00;
-  left: 230px;
-  bottom: 185px;
+  left: 265px;
+  bottom: 215px;
   transform: rotate(8deg);
   /*margin-right: 5px; // Adjust spacing between icon and text */
 }
@@ -913,9 +914,9 @@ img {
   font-size: 100px; /* Adjust font size as needed */
   font-weight: bold;
   color: #990000;
-  left: 275px;
+  left: 360px;
   bottom: 110px;
-  transform: rotate(20deg);
+  transform: rotate(30deg);
   /*margin-right: 5px; // Adjust spacing between icon and text */
 }
 /* form */
