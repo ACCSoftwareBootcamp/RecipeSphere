@@ -5,7 +5,7 @@
 
     <div class="homeContainer">
 
-      <p class="homeImgText1">Welcome Friends!</p>
+      <p class="homeImgText1">Welcome <%= fname %>!</p>
       <p class="homeImgText1">Happy, you are sphere</p>
 
       <form action="/search" method="/get">
@@ -14,6 +14,20 @@
      </div>
     </div>
  
+
+<div>
+  <form action="/logout" method="get">
+  <button class="homeFindButton">Logout</button>
+</form>
+</div>
+
+<br><br>
+<div>
+  <form action="/delete" method="post">
+  <button class="homeFindButton">Delete Account</button>
+</form>
+</div>
+
 
   <!-- FOOTER PARTIAL -->
   <br />
