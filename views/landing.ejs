@@ -2,20 +2,19 @@
 <%- include ('./partials/header.ejs') %>
 
 <!-- landing page/ ROOT ROUTE -->
-<div id="home">
-  <div class="container">
+<div id="landing">
+  <div class="landingContainer">
     <div>
-      <p class="imgText">Welcome Friends!</p>
-      <p class="imgText">Happy, you are Sphere</p>
+      <p class="landingText">Welcome Friends! <br>Happy, you are Sphere</p>
   
       <!-- LOGIN BUTTON -->
       <form action="/login" method="/get">
-        <button class="findButton" id="fb1">Log In</button>
+        <button class="landingfindButton" id="fb1">Log In</button>
       </form>
 
       <!-- SIGN UP BUTTON -->
       <form action="/signup" method="/get">
-        <button class="findButton" id="fb2">Sign Up</button>
+        <button class="landingfindButton" id="fb2">Sign Up</button>
       </form>
 
     </div>
