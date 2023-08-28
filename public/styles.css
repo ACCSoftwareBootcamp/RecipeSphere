@@ -106,16 +106,11 @@ body {
   }
 }
 
-
-
-
-/* CSS - For background of Landing page -Afsana */
 /* This styling will be used for the Landing.ejs pages */
-/* for color: https://www.color-hex.com/color/8b0000 */
 /* use container div class as relative to get css four properties and use flex and fix the width & height*/
 
 /* the image will be scaled to cover the entire container while maintaining its aspect ratio */
-#home {
+#landing {
   background-image: url('/assets/landingBackground.jpg');
   background-size: cover;
   width: 100%;
@@ -124,102 +119,57 @@ body {
   box-sizing: border-box;
 }
 
-
-.container {
+.landingContainer {
   display: flex;
-  /* when display flex  then you can use justify content in the center */
   justify-content: end; 
-  width: 800px;
-  height: 800px;
-  padding-top: 2px;
-  padding-top: 10em;
-
+  width: 500px;
+  height: 700px;
 }
 
-/* the image will be scaled to cover the entire container while maintaining its aspect ratio */
-.imgBack {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* translateY(-50%); CSS rule is used to vertically center an element within its parent container */
-
-.imgText {
-  /* position: absolute; */
-  /* top: 40%;
-  right: 200px; */
-  transform: translateY(-50%);
-  color: #800000;
-  font-size: 25px;
+.landingText {
+  color: #D4D925;
+  font-size: 3.6em;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-   text-align: center;
+  text-align: right;
+  position: absolute;
+  top: 37%; 
+  transform: translateY(-50%); 
+  right: 10%; 
 }
-
-/* positioned 45% of the parent's height from the top plus an additional 30 pixels down */
-/* .imgText2 {
-  top: calc(45% + 30px);
-} */
 
 /*manage find button class: absolute- position it freely within its nearest positioned ancestor., 
  and positions the element 45% down from the top edge of its containing block  */
 #fb1 {
-  right: 190px;
+  right: 10%;
 }
 
 #fb2 {
-  right: 100px;
-}
-
-/*.findButton:hover {
-    color: darkorange;
-}*/
-
-/* findButton class for user hover */
-.findButton:hover {
-  color: hsl(64, 85%, 68%);
-  /* Light golden color */
-  background-color: #FFA500;
-  /* Light orange color */
+  right: 17%;
 }
 
 /*manage find button class: absolute- position it freely within its nearest positioned ancestor., 
  and positions the element 45% down from the top edge of its containing block  */
-.findButton {
+.landingfindButton {
   position: absolute;
-  top: calc(45% + 100px);
-  right: 190px;
-  padding: 8px 8px;
+  top: calc(50% + 2vw);
+  transform: translateX(-50%);  
+  padding: 1vh 1vw;
+  border-radius: 5px;
   color: white;
   background-color: #990000;
-  border: none;
   cursor: pointer;
-  border: 1px solid #990000 Red4;
-  /* Light golden color */
   font-weight: bolder;
-  font-size: 15px;
+  font-size: 1.3vw;
 }
-
-/*.findButton:hover {
-    color: darkorange;
-}*/
 
 /* findButton class for user hover */
-.findButton:hover {
-  color: hsl(64, 85%, 68%);
-  /* Light golden color */
-  background-color: #FFA500;
-  /* Light orange color */
+.landingfindButton:hover {
+  color: darkslategrey;
+  background-color: #82CD47;
 }
-
-/* Landing and Home CSS ENDS */
-
-
+/* Landing CSS ENDS */
 
 /* FOOTER CSS Begins */
-
 /* location of footer and set all properties */
 .foot {
   padding: 0;
@@ -230,7 +180,6 @@ body {
 footer {
   background-color: #990000;
 }
-
 
 .footerContainer {
   width: 100%;
@@ -272,8 +221,6 @@ footer {
 .socialIcoms a:hover i {
   color: white; 
 }
-  
-
 
 .footerNav {
   margin: 20px 0;
@@ -299,7 +246,6 @@ footer {
   color: blue;
 }
 
-
 .designer {
   color: rgb(230, 218, 218);
   text-transform: uppercase;
@@ -320,77 +266,7 @@ footer {
     margin: 10px;
   }
 }
-
 /* FOOTER CSS ENDS HERE */
-
-
-
-
-
-
-/* for color: https://www.color-hex.com/color/8b0000 */
-/* Header for background of Home page */
-/* use container div class as relative to get css four properties and use flex and fix the width & height*/
-
-/* the image will be scaled to cover the entire container while maintaining its aspect ratio */
-/* LANDING PAGE BGD */
-#home {
-  background-image: url('/assets/landingBackground.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-
-  box-sizing: border-box;
-}
-
-/* translateY(-50%); CSS rule is used to vertically center an element within its parent container */
-.imgText1,
-.imgText2 {
-  position: absolute;
-  top: 40%;
-  right: 200px;
-  transform: translateY(-50%);
-  color: #990000;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-/* positioned 45% of the parent's height from the top plus an additional 30 pixels down */
-.imgText2 {
-  top: calc(45% + 30px);
-}
-
-/*manage find button class: absolute- position it freely within its nearest positioned ancestor., 
- and positions the element 45% down from the top edge of its containing block  */
-.findButton {
-  position: absolute;
-  top: calc(45% + 100px);
-  right: 190px;
-  padding: 8px 8px;
-  color: white;
-  background-color: #990000;
-  border: none;
-  cursor: pointer;
-  border: 1px solid #990000 Red4;
-  /* Light golden color */
-  font-weight: bolder;
-  font-size: 15px;
-}
-
-/*.findButton:hover {
-    color: darkorange;
-}*/
-
-/* findButton class for user hover */
-.findButton:hover {
-  color: hsl(64, 85%, 68%);
-  /* Light golden color */
-  background-color: #FFA500;
-  /* Light orange color */
-}
-
 
 /* About Styling Begins Here */
 .aboutContainer h1 {
@@ -408,16 +284,6 @@ footer {
   margin: 20px;
   font-size: 27px;
 }
-
-/* .randomRecipe {
-  text-align: ;
-} */
-
-/* #recipeButton {
-  background-color: #D4D925;
-  color: #990000;
-  cursor: pointer;
-} */
 
 #bgd {
   background-image: url('/assets/aboutBgd.jpg');
@@ -521,8 +387,6 @@ img {
   padding: 8px;
   background-color: #fbfbe7; 
 }
-
-
 
 .btn1 {
   background-color: #F0FF42;
@@ -708,9 +572,6 @@ img {
 }
 
 
-
-
-
 /* LOGIN PAGE BOX STYLING */
 /* give container css properties for background*/
 .lcontainer {
@@ -806,8 +667,6 @@ img {
   cursor: pointer;
   transition: background 1s;
   
-
-  
 }
 /* adj input field between button spacing*/
 .linput-group{
@@ -819,8 +678,6 @@ img {
   color: #555;
 }
 
-
-
 /*Contact page CSS Style for image and form */
 .main{
   margin-top: 20px;
@@ -830,7 +687,6 @@ img {
   width: 1280px;
   height: 800px;
 }
-
 
 .contactContainer {
   /*display: flex;
