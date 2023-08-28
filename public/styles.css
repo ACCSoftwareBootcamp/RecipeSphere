@@ -151,7 +151,7 @@ body {
   /* top: 40%;
   right: 200px; */
   transform: translateY(-50%);
-  color: #800000;
+  color: #dca121;
   font-size: 25px;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
@@ -228,7 +228,7 @@ body {
 }
 
 footer {
-  background-color: #990000;
+  background-color: #453e34;
 }
 
 
@@ -253,7 +253,7 @@ footer {
 
 .socialIcoms a i {
   font-size: 2em;
-  color: #4267B2;
+  color: #000000;
   opacity: 0.9;
   transition: color 0.5s;
 }
@@ -296,7 +296,7 @@ footer {
 }
 
 .footerNav ul li a:hover {
-  color: blue;
+  color: rgb(255, 183, 0);
 }
 
 
@@ -351,7 +351,7 @@ footer {
   top: 40%;
   right: 200px;
   transform: translateY(-50%);
-  color: #990000;
+  color: #f1b739;
   font-size: 25px;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
@@ -733,7 +733,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: #FF5B00;
+  background: #534138;
   padding: 50PX 60PX 70PX;
   text-align:center
 }
@@ -741,7 +741,7 @@ img {
 .lform-box h1 {
   font-size: 30px;
   margin-bottom: 60px;
-  color: #3c00a0;
+  color: #4a7b39;
   position: relative;
 }
 /* ::after. In CSS, ::after creates a pseudo-element that is the last child of the selected element, content empty, width, height */
@@ -800,7 +800,7 @@ img {
 /* adj button for sign up & login*/
 .lbtn-field button{
   flex-basis: 48%;
-  background: #3c00d0;
+  background: #5c7b33;
   color: #fff;
   height: 40px;
   border-radius: 20px;
