@@ -213,7 +213,7 @@ app.get("/logout", (req, res) => {
 
 // DELETE USER
 //EP: Tried to delete using ID but could not get it to work, so used
-//email instead
+//email instead.
 app.post("/delete", (req, res) => {
   const id = req.session.email.toString();
   console.log(`delete id`, id)
