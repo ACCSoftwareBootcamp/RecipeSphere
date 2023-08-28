@@ -3,67 +3,46 @@
 
 <script src="https://kit.fontawesome.com/a73383f015.js" crossorigin="anonymous"></script>
 
-    <div id="loginbgd">
-         <!--container div holds image, form-box div holds form for sign up and login-->
+<div id="loginbgd">
+    <!--container div holds image, form-box div holds form for sign up and login-->
     <div class="lcontainer">
         <div class="lform-box">
             <!-- <h1 id="title">Sign Up</h1> -->
             <h1 id="title">Login</h1>
-            <form class="lform">
+            <form class="lform" action="/login" method="post">
                 <div class="linput-group">
                     <!-- <div class="linput-field" id="nameField">
                         <i class="fa-solid fa-user"></i>
                         <input type="text" placeholder="Name">
                     </div> -->
-                    
+
                     <div class="linput-field">
                         <i class="fa-solid fa-envelope"></i>
-                        <input class="inp" type="email" placeholder="Email">
+                        <input class="inp" type="email" name="email" placeholder="Email">
                     </div>
                     <div class="linput-field">
                         <i class="fa-solid fa-lock"></i>
-                        <input class="inp" type="password" placeholder="password">
+                        <input class="inp" type="password" name="password" placeholder="Password">
                     </div>
                     <!--add p tag for message & add link to reset user password-->
                     <p>Forgot password <a href="#">Click Here!</a></p>
                 </div>
                 <!--add button for sign up and login for user click & add id for click function-->
                 <div class="lbtn-field">
-                    <!-- <button type="button" id="signupBtn">Sign up</button> -->
-                    <button type="button" id="loginBtn" >Login</button>
+                    <!-- Change the type to "submit" -->
+                    <button type="submit" id="loginBtn">Login</button>
                 </div>
             </form>
         </div>
     </div>
-    </div>
+</div>
 
+<script>
+    let loginBtn = document.getElementById("loginBtn");
+        // Change the title
+        title.innerHTML = "Login";    
+</script>
 
-
-    <script>
-        // add four variable to get html elements
-        // let signupBtn = document.getElementById("signupBtn");
-        let loginBtn = document.getElementById("loginBtn");
-        let nameField = document.getElementById("nameField");
-        let title = document.getElementById("title");
-        //add click function for on the button here - loginbtn click hide name field 
-        loginBtn.onclick = function() {
-            nameField.style.maxHeight = "0"             //hidden when maxheight 0.
-        //add different title as inner html
-        title.innerHTML = "Login";
-        signupBtn.classList.add("disable");
-        loginBtn.classList.remove("disable");
-        }
-    //add click feature on the signup button 
-          //add click function for on the button here -  
-        //   signupBtn.onclick = function() {
-        //     nameField.style.maxHeight = "60px"             
-        // //add different title as inner html
-        // title.innerHTML = "Sign Up";
-        // signupBtn.classList.remove("disable");
-        // loginBtn.classList.add("disable");
-        // }
-    </script>
-
-  <!-- FOOTER PARTIAL -->
-  <br>
-  <%- include ('./partials/footer.ejs') %>
+<!-- FOOTER PARTIAL -->
+<br>
+<%- include ('./partials/footer.ejs') %>
