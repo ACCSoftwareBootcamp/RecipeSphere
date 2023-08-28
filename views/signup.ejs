@@ -1,11 +1,9 @@
 <!-- HEADER PARTIAL -->
 <%- include ('./partials/header.ejs') %>
     <div id="signupBgd">
-        <div class="signuplogo">
-            <h1 class="signupHeader" >Recipe Sphere Sign Up</h1>
-        </div>
         <div class="signupContainer">
             <div class="signup-form">
+                <h1 class="signupHeader" >Recipe Sphere Sign Up</h1>
                 <h1 class="signupHeader2" >Welcome</h1>
                 <h2>Please fill out the following Form!</h2>
                 <form class="signupFormDetails" action="/submit-signup" method="post">
@@ -23,7 +21,7 @@
 
                     <br><br>
                     <!-- Submit Button -->
-                    <button type="submit">Submit</button>
+                    <button class="signupBtn" type="submit">Submit</button>
                 </form>
             </div>
         </div>
