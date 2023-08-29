@@ -2,31 +2,28 @@
 <%- include ('./partials/header.ejs') %>
   <div id="homeBgd">
 
-
     <div class="homeContainer">
 
-      <p class="homeImgText1">Welcome <%= fname %>!</p>
-      <p class="homeImgText1">Happy, you are sphere</p>
+      <p class="homeImgText1">Welcome <%= fname %>! <br>Happy, you are sphere</p>
 
       <form action="/search" method="/get">
-        <button class="homeFindButton">Find Recipes</button>
+        <button id="hfb1" class="homeFindButton">Find Recipes</button>
       </form>
-     </div>
     </div>
- 
+  </div>
 
-<div>
-  <form action="/logout" method="get">
-  <button class="homeFindButton">Logout</button>
-</form>
-</div>
+  <div>
+    <form action="/logout" method="get">
+      <button id="hfb2" class="homeFindButton">Logout</button>
+    </form>
+  </div>
 
-<br><br>
-<div>
-  <form action="/delete" method="post">
-  <button class="homeFindButton">Delete Account</button>
-</form>
-</div>
+  <br><br>
+  <div>
+    <form action="/delete" method="post">
+      <button id="hfb3" class="homeFindButton">Delete Account</button>
+    </form>
+  </div>
 
 
   <!-- FOOTER PARTIAL -->
