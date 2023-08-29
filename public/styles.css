@@ -270,33 +270,36 @@ footer {
 }
 /* FOOTER CSS ENDS HERE */
 
-
 /* About Styling Begins Here */
+.aboutContainer{
+  padding: 15% 10% ;
+  text-align: center;
+  margin-left: 30%;
+}
 .aboutContainer h1 {
-  color: #990000;
-  font-size: 55px;
+  color: #FFEE63;
+  font-size: 4.5vw;
+  font-weight: bold;
+  margin-bottom: 2%;
 }
 
 .aboutContainer h3 {
-  color: #22AD1F;
-  font-size: 30px;
-  margin-bottom: 20px;
+  color: #FFA500;
+  font-size: 2vw;
 }
 
 .aboutContainer p {
-  margin: 20px;
-  font-size: 27px;
+  font-size: 1.8vw;
+  margin: 5% 10%;
+  color: #22AD1F;
 }
 
 #bgd {
   background-image: url('/assets/aboutBgd.jpg');
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 /* About Styling ENDS Here */
@@ -703,49 +706,32 @@ img {
 
 /*Contact page CSS Style for image and form */
 .main{
-  margin-top: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1280px;
-  height: 800px;
+  width: 100%;
+  height: 100vh;
 }
 
 .contactContainer {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1280px;
-  height: 800px;*/
   position: relative;
 }
-.contactContainer img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover; /* Adjust to "cover", "fill", or "none" as needed */
 
-}
 .textContainer {
   position: absolute;
-  top: 50%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  /*padding: 20px;*/
+  top: 5%;
+  left: 35%;
   text-align: center;
-  border-radius: 10px;
 }
 .textContainer h2 {
-  margin: 0;
-  font-size: 36px;
+  margin: 2%;
+  font-size: 3vw;
   font-weight:bolder;
   font-style:calc();
   color: #F0FF42;
-  border-radius: 10px;
   font-smooth: always; /* Apply font smoothing */
 }
 .textContainer p {
-  margin: 0;
-  font-size: 28px;
+  margin: 0%;
+  font-size: 1.8vw;
   color: #54B435;
   font-weight: bolder;
   font-style:calc();
@@ -756,7 +742,7 @@ img {
   position: absolute;
   top: 75%;
   left: 10%;
-  font-size: 65px;
+  font-size: 5vw;
   color: #54B435;
   font-family:cursive;
 }
@@ -765,32 +751,32 @@ img {
 .question-icon1 {
   position: absolute;
   display: inline-block;
-  font-size: 100px; /* Adjust font size as needed */
+  font-size: 8vw; /* Adjust font size as needed */
   font-weight: bold;
   color: #D4D925;
-  left: 120px;
-  bottom: 185px;
+  left: 80px;
+  bottom: 195px;
   transform: rotate(-20deg);
   /*margin-right: 5px; // Adjust spacing between icon and text */
 }
 .question-icon2 {
   position: absolute;
   display: inline-block;
-  font-size: 100px; /* Adjust font size as needed */
+  font-size: 8vw; /* Adjust font size as needed */
   font-weight: bold;
   color: #FF5B00;
-  left: 265px;
-  bottom: 215px;
+  left: 255px;
+  bottom: 245px;
   transform: rotate(8deg);
   /*margin-right: 5px; // Adjust spacing between icon and text */
 }
 .question-icon3 {
   position: absolute;
   display: inline-block;
-  font-size: 100px; /* Adjust font size as needed */
+  font-size: 8vw; /* Adjust font size as needed */
   font-weight: bold;
   color: #990000;
-  left: 360px;
+  left: 30%;
   bottom: 110px;
   transform: rotate(30deg);
   /*margin-right: 5px; // Adjust spacing between icon and text */
@@ -798,13 +784,12 @@ img {
 /* form */
 /* Contact form for user input*/
 .contact-form {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15%;
+  
 }
-.contact-form h2 {
-  margin-top: 60px;
-}
+
 .contact-form label {
   display: block;
   margin-bottom: 1px;
@@ -812,18 +797,18 @@ img {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
+  padding: 2%;
+  margin-bottom: 5%;
   box-sizing: border-box;
-  border: 1px solid #040D12;
+  border: 3px solid black;
   outline: none;
 }
 .contact-form textarea {
   resize: vertical;
 }
 .contact-form button {
-  background-color: rgb(223, 231, 216);
-  color: #040D12;
+  background-color: #990000;
+  color: white;
   font-weight: bold;
   padding: 3px 8px;
   border-radius: 5px;
