@@ -815,3 +815,44 @@ img {
   border-color: #040D12;
   cursor: pointer;
 }
+
+
+
+
+/* STYLING FOR 404 EMOJI
+
+/* Center the container */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+  
+  /* Style for the sad emoji image */
+.sad-emoji {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+    animation: bounce 1s infinite alternate;
+}
+  /* add p text style */
+.p404 > p {
+    color: red;
+    font-size: 24px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+  /* Animation keyframes */
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+}
+  
