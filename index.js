@@ -205,7 +205,7 @@ app.get("/logout", (req, res) => {
     if (err) {
       return next(err);
     }
-    res.redirect("/");
+    res.redirect("/?success=true");
   });
 });
 
@@ -227,7 +227,8 @@ console.log(`delete useremail` , id)
 
   User.deleteOne({ email: id })
     .then(function (data) {
-      res.redirect("/");
+      //pass 'deltrue to landing page to let alert know account was deleted
+      res.redirect("/?success=deltrue");
     })
     .catch((err) => {
       console.log(err);
