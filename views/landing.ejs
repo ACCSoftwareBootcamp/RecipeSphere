@@ -1,6 +1,36 @@
 <!-- HEADER PARTIAL -->
 <%- include ('./partials/header.ejs') %>
 
+
+ <!-- ***  EP: THIS IS FOR THE POP UP ALERT WHEN LOGOUT/DELETE IS SUCCESSFUL *** -->
+  <!-- Include SweetAlert2 CSS and JavaScript -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.15/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.15/dist/sweetalert2.all.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const queryParams = new URLSearchParams(window.location.search);
+      if (queryParams.get('success') === 'true') {
+        // Display a pop-up alert using SweetAlert2
+        Swal.fire({
+          title: 'You are now Logged Out!',
+          showConfirmButton: false,
+          timer: 2000 // Display for 2 seconds
+        });
+      } else if (queryParams.get('success') === 'deltrue') {
+      // Display a pop-up alert using SweetAlert2
+        Swal.fire({
+          title: 'Your Account is Deleted!',
+          showConfirmButton: false,
+          timer: 2000 // Display for 2 seconds
+        });
+      }
+
+    });
+  </script>
+  <!-- **** END POP-UP ALERT FOR CONTACT SUBMISSION **** -->
+
+
 <!-- landing page/ ROOT ROUTE -->
 <div id="landing">
   <div class="landingContainer">
