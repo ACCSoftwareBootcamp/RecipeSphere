@@ -164,7 +164,7 @@ app.get("/login", (req, res) => {
 
 //POST: LOGIN PAGE
 app.post("/login",  passport.authenticate("local", {
-                    failureRedirect: "/login", // Redirect back to the login page on failure
+                    failureRedirect: "/login?success=false", // Redirect back to the login page on failure
                     }),
                     //IF the Loggin is successfull, get the users firstname to pass to the home page.
                     function (req, res) {
