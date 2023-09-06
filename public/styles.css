@@ -512,7 +512,6 @@ img {
 }
 
 /* text area resize*/
-
 .signup-form textarea {
   resize: vertical;
 }
@@ -706,21 +705,22 @@ img {
 
 /*Contact page CSS Style for image and form */
 .main{
-  display: flex;
-  width: 100%;
-  /* Chge height from 100vh to auto so it does not overlap with footer on responsiveness */
-  height: auto;
-}
-
-.contactContainer {
-  position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image:  url("./assets/contactBgd.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .textContainer {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
   top: 5%;
   left: 35%;
   text-align: center;
+ 
 }
 .textContainer h2 {
   margin: 2%;
@@ -740,54 +740,47 @@ img {
 }
 /* adj css for question text and question icons*/
 .ques {
+  /* display:inline-block; */
+  border: 3px solid red;
   position: absolute;
-  top: 75%;
+  top: 80%;
   left: 10%;
-  font-size: 5vw;
+  font-size: 3vw;
   color: #54B435;
   font-family:cursive;
 }
+
 /*.... question icon source: https://fontawesome.com/search?q=question&o=r */
 /* adj css properties for question icons */
 .question-icon1 {
-  position: absolute;
-  display: inline-block;
-  font-size: 8vw; /* Adjust font size as needed */
+  font-size: 5vw; /* Adjust font size as needed */
   font-weight: bold;
   color: #D4D925;
   left: 80px;
   bottom: 195px;
   transform: rotate(-20deg);
-  /*margin-right: 5px; // Adjust spacing between icon and text */
 }
 .question-icon2 {
-  position: absolute;
-  display: inline-block;
-  font-size: 8vw; /* Adjust font size as needed */
+  font-size: 5vw; /* Adjust font size as needed */
   font-weight: bold;
   color: #FF5B00;
   left: 255px;
   bottom: 245px;
   transform: rotate(8deg);
-  /*margin-right: 5px; // Adjust spacing between icon and text */
 }
 .question-icon3 {
-  position: absolute;
-  display: inline-block;
-  font-size: 8vw; /* Adjust font size as needed */
+  font-size: 5vw; /* Adjust font size as needed */
   font-weight: bold;
   color: #990000;
   left: 30%;
   bottom: 110px;
   transform: rotate(30deg);
-  /*margin-right: 5px; // Adjust spacing between icon and text */
 }
 /* form */
 /* Contact form for user input*/
 .contact-form {
-  width: 100%;
-  margin: 0 auto;
-  padding: 15%;
+ 
+  
   
 }
 
@@ -795,6 +788,7 @@ img {
   display: block;
   margin-bottom: 1px;
 }
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
