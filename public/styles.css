@@ -740,8 +740,6 @@ img {
 }
 /* adj css for question text and question icons*/
 .ques {
-  /* display:inline-block; */
-  border: 3px solid red;
   position: absolute;
   top: 80%;
   left: 10%;
