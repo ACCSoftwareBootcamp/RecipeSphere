@@ -2,7 +2,7 @@
 2023 June Cohort Summer Software bootcamp team
 
 Imagined: Afsana Afroze
-Developed: Afsana Afroze, Giovanna Perez, Edgar Pecson
+<br>Developed: Afsana Afroze, Giovanna Perez, Edgar Pecson
 
 
 Recipe Sphere is an Node Js API website which allows you to browse recipes by a search keyword.  
