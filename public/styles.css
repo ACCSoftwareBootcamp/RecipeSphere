@@ -778,7 +778,8 @@ img {
 /* form */
 /* Contact form for user input*/
 .contact-form {
- color: black;
+
+ color: #000000;
 }
 
 .contact-form label {
