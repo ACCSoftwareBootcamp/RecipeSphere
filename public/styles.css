@@ -509,6 +509,7 @@ img {
   box-sizing: border-box;
   border: 1px solid #990000;
   outline: none;
+
 }
 
 /* text area resize*/
@@ -777,7 +778,7 @@ img {
 /* form */
 /* Contact form for user input*/
 .contact-form {
- color: white;
+ color: black;
 }
 
 .contact-form label {
