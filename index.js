@@ -289,6 +289,37 @@ app.get("/search", isLoggedIn, (req, res) => {
     }); //end .catch-error
 });
 
+
+
+
+const recipes = [];
+
+app.get("/recipe", isLoggedIn,(req, res) => {
+    res.render('recipe');
+});
+
+app.post('/recipe', isLoggedIn,(req, res) => {
+    const recipe = {
+        title: req.body.title,
+        ingredients: req.body.ingredients,
+        instructions: req.body.instructions,
+        image: req.body.image
+    };
+    recipes.push(recipe);
+
+    // Send a response indicating success
+    res.status(200).send('Recipe submitted successfully!');
+});
+
+app.get('/recipes', isLoggedIn, (req, res) => {
+    res.json(recipes);
+});
+
+
+
+
+
+
 // For user wrong entry: Middleware for handling 404 errors - Inside the middleware function, status code to 404,
 //indicating that the resource was not found
 // Handle 404 error
@@ -307,6 +338,15 @@ function isLoggedIn(req, res, next) {
   // If not authenticated, user gets kicket out to the login page
   res.redirect("/login");
 }
+
+
+
+
+
+
+
+
+
 
 
 // Start listen the server on the local PORT
