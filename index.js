@@ -340,15 +340,6 @@ function isLoggedIn(req, res, next) {
 }
 
 
-
-
-
-
-
-
-
-
-
 // Start listen the server on the local PORT
 app.listen(port, () => {
   console.log(`Server is running on PORT ${port}`);

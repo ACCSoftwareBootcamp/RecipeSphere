@@ -881,7 +881,7 @@ img {
   box-sizing: border-box;
 }
 
-.btn {
+#btn {
   padding: 10px 20px;
   background-color: #4CAF50;
   color: white;
@@ -890,7 +890,7 @@ img {
   cursor: pointer;
 }
 
-.btn:hover {
+#btn:hover {
   background-color: #45a049;
 }
 
