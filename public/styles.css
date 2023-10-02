@@ -792,6 +792,7 @@ img {
 .contact-form label {
   display: block;
   margin-bottom: 1px;
+  color: white;
 }
 
 .contact-form input,
